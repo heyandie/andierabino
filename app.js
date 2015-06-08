@@ -7,12 +7,6 @@ var bodyParser = require('body-parser');
 var sass = require('node-sass');
 var sassMiddleware = require('node-sass-middleware');
 
-// database connection
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/heyandie-db');
-
-var post = require('./models/post');
-
 var app = express();
 
 // view engine setup
