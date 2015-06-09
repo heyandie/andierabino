@@ -5,11 +5,16 @@ html,body
     width: 100%;
     margin: 0px;
     padding: 0px;
+    background-color: #222;
+}
+.section{
+	padding-left: 30px;
+	padding-right: 30px;
 }
 body {
   padding: 0px;
   margin: 0px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Lora",serif, Helvetica, Arial, sans-serif;
   min-height: 100vh;
   position: relative;
   overflow-x:hidden;
@@ -17,8 +22,9 @@ body {
 }
 .grid-container{
 	max-width: 10000px !important;
-	padding:0px;
+	padding:0px !important;
 }
+
 
 a {
   color: #00B7FF;
@@ -35,7 +41,7 @@ a {
 #menu-toggled{
 	background:transparent;
 	z-index: 5;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	height: 100%;
@@ -212,7 +218,6 @@ a {
 	background-position: center center;
 	background-size: cover;
 	position: relative;
-
 	.banner-bg{
 		background: rgba(0,0,0,0.1);
 		position: absolute;

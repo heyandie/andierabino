@@ -1,5 +1,20 @@
 #about.grid-container
   %div.section-heading.grid-100 
     %span About
-  %div.subsection.grid-100
-    %div.grid-70
+  %div.subsection.grid-100.grid-parent
+    %div.grid-90.push-5
+      %div.subsection-illustration.illus-left.grid-30.grid-parent.tablet-grid-30.mobile-grid-30
+        = image_tag '/assets/images/illus-andie-3.png', :width=>"55%"
+      %div.grid-60.prefix-10.grid-parent.subsection-content.tablet-grid-70.mobile-grid-70
+        %div.subsection-heading.light Hello world
+        %p For example: Although the header-height is set to a specific pixel value it is different in height for the two environments. Same with the width of the content: I set a max-width of 1260px - the width of the content is different for the two environments.
+
+ 
+  %div.subsection.subsection-two.grid-100.grid-parent
+    %div.grid-90.push-5
+      %div.subsection-illustration.illus-left.grid-30.grid-parent.tablet-grid-30.mobile-grid-30
+        = image_tag '/assets/images/illus-andie-2.png', :width=>"55%"
+      %div.grid-60.prefix-10.grid-parent.subsection-content.tablet-grid-70.mobile-grid-70
+        %div.subsection-heading.light Fun Facts
+        %p.section-p For example: Although the header-height is set to a specific pixel value it is different in height for the two environments. Same with the width of the content: I set a max-width of 1260px - the width of the content is different for the two environments.
+     

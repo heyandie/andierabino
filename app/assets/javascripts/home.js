@@ -48,8 +48,46 @@ $(function(){
 					top: 0
 				},1000,"swing");
 		},400);
+
+		// init controller
+		var controller = new ScrollMagic.Controller({
+			globalSceneOptions:{
+				triggerHook: 'onLeave'
+			}
+		});
+		
+		new ScrollMagic.Scene({
+			triggerElement: '#about',
+			duration:100,
+			offset: -450
+		})
+		.setTween("#home-banner",0.5,{opacity:0.5})
+		.addTo(controller);
+
+
+		$(".subsection-illustration.illus-left,.subsection-illustration.illus-right").each(function(){
+			var elem = $(this);
+			new ScrollMagic.Scene({
+				triggerElement:this,
+				triggerHook:"onCenter",
+				offset:-400,
+				reverse: true
+			})
+			.setTween(new TimelineMax().add([
+				 TweenMax.to(elem.find('img').first(),0.5,{left:0}),
+				 TweenMax.to(elem.parents('.subsection').find('.subsection-content').first(),0.5,{opacity:1})
+				]))
+			.addTo(controller);
+		});
+		
+	
+		
+
+	
     });
-   
+
+
+    
 
 	
 

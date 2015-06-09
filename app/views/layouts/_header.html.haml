@@ -9,24 +9,25 @@
 
 #main-nav
   .grid-container.mh
-    .grid-100
-      .grid-30.tablet-grid-30.mobile-grid-30.grid-parent.mh
-        %a.site-link
-          =image_tag '/assets/images/heylogo.png', :height=>"75px", :id=>"site-logo"
-      .grid-70.tablet-grid-70.mobile-grid-70.grid-parent.nav-right
-        %ul#main-menu
-        
-          %li
-            %a{ href: "#about"} About
-          %li
-            %a Resume
-          %li
-            %a Contact
-        #toggle-button
+    .grid-100.grid-parent
+      .grid-90.push-5
+        .grid-30.tablet-grid-30.mobile-grid-30.grid-parent.mh
+          %a.site-link
+            =image_tag '/assets/images/heylogo.png', :height=>"75px", :id=>"site-logo"
+        .grid-70.tablet-grid-70.mobile-grid-70.grid-parent.nav-right
+          %ul#main-menu
+          
+            %li
+              %a{ href: "#about"} About
+            %li
+              %a Resume
+            %li
+              %a Contact
+          #toggle-button
 
-          .label MENU
-     
-          %a.toggle-menu
-            .toggle-line
-            .toggle-line
-            .toggle-line
+            .label MENU
+       
+            %a.toggle-menu
+              .toggle-line
+              .toggle-line
+              .toggle-line
