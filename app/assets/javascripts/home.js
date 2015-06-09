@@ -4,17 +4,34 @@ $(function(){
     $('body').jpreLoader($jpreOptions);
 	$(".toggle-menu").on('click',function(){
 		if($(this).hasClass('toggle-to-close')){
-			$("#menu-toggled").removeClass('displayed');
-			$(this).removeClass('toggle-to-close');
+			toggleClose();
 		}
 			
 		else{
 			$("#menu-toggled").addClass('displayed');
 			$(this).addClass('toggle-to-close');
+			$('body').css({'height':'100%'});
+
+			$('body').on('scroll touchmove mousewheel', function(e){
+			  e.preventDefault();
+			  e.stopPropagation();
+			  return false;
+			});
 		}
 			
 
 	});
+
+	function toggleClose(){
+		$("#menu-toggled").removeClass('displayed');
+		$('.toggle-menu').removeClass('toggle-to-close');
+		$('body').css({'overflow-y':'auto','height':'auto'});
+		$('body').off('scroll touchmove mousewheel');
+	}
+
+	$(window).resize(function(){
+		toggleClose();
+	})
 	$(".banner-text").css("opacity","0");
 	$("#main-nav").css("top","-100%");
 
@@ -31,6 +48,7 @@ $(function(){
 			$('html,body').animate({
 				scrollTop:$target.offset().top
 			},500,"swing");
+			$(".toggle-menu").click();
 			return false;
 			
 
