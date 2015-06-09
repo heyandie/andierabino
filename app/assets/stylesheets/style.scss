@@ -1,0 +1,248 @@
+$master-color: #00A99D;
+$secondary-color: #e04146;
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    //overflow-x: hidden; 
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100vh;
+  position: relative;
+}
+.grid-container{
+	max-width: 10000px;
+}
+
+a {
+  color: #00B7FF;
+}
+.mh{
+  height: 100%;
+}
+.nols{
+  letter-spacing: 0px;
+}
+.master-color{
+	color: $master-color;
+}
+#menu-toggled{
+	background:transparent;
+	z-index: 5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	visibility: hidden;
+	transition:0.3s;
+	text-align:right;
+	ul{
+		list-style:none;
+		margin-top: 150px;
+		margin-right: 20px;
+		position: relative;
+		z-index: 100;
+	}
+	li{
+		display: block;
+		width: auto;
+		cursor: pointer;
+		padding: 15px 0px;
+		a{	
+			font-family: "Fjalla One";
+			font-size: 27px;
+			color: #444;
+			cursor: pointer;
+			
+		}
+	}
+	
+}
+#menu-toggled.displayed{
+	background: rgba(255,255,255,0.35);
+	visibility: visible;
+}
+#main-nav{
+	height: 80px;
+	position: fixed;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	z-index: 100;
+	a.site-link{
+		line-height: 100px;
+		cursor: pointer;
+		height: 65px;
+		display: inline-block;
+	}
+	#site-logo{
+		height:65px;
+		line-height: 100px;
+		display: inline-block;
+	}
+	.nav-right{
+		text-align: right;
+	}
+	#toggle-button{
+		display: none;
+	}
+	#main-menu{
+	display: inline-block;
+	list-style: none;
+	font-family: 'Fjalla One';
+	padding: 0px;
+	margin: 0px;
+ 		li{
+ 			display: inline-block;
+ 			line-height: 30px;
+ 			position: relative;
+ 		}
+ 		.toggle-menu{
+ 			display: inline-block;
+ 			width: 100px;
+ 			position: relative;
+ 			height: 30px;
+ 			padding: 0px;
+ 		}
+ 		.label{
+ 			position: absolute;
+ 			width: 60px;
+ 			height: 30px;
+ 			line-height: 30px;
+ 			z-index: 1000;
+ 			font-family: "Fjalla One";
+ 			font-size: 12px;
+ 			line-height: 30px;
+ 			right: 35px;
+ 			top: -3px;
+ 		}
+ 		.toggle-line{
+ 			width: 30px;
+ 			right: 0;
+ 			position: absolute;
+ 			padding-right: 0;
+ 			border-top: 2px solid #444;
+ 			display: block;
+ 			margin:5px 0px;
+ 			transition:0.5s;
+ 		}
+ 		.toggle-line:nth-of-type(1){
+ 			transform:translate(0px,0px);
+ 		}
+ 		.toggle-line:nth-of-type(2){
+ 			transform:translate(0,5px);
+ 		}
+ 		.toggle-line:nth-of-type(3){
+ 			transform:translate(0,10px);
+ 		}
+ 		.toggle-menu:not(.toggle-to-close):hover .toggle-line:nth-of-type(1){
+ 			transform:translate(0,-2px);
+ 		}
+ 		.toggle-menu:not(.toggle-to-close):hover .toggle-line:nth-of-type(3){
+ 			transform:translate(0,12px);
+ 		}
+ 		.toggle-to-close .toggle-line:nth-child(even){
+ 			transform:  translate(0, 5px)  rotate(-45deg);
+ 		}
+ 		.toggle-to-close .toggle-line:nth-child(1){
+ 			transform:  translate(0, 5px)  rotate(45deg);
+ 		}
+ 		.toggle-to-close .toggle-line:nth-of-type(3){
+ 			transform:  translate(0, 5px) rotate(45deg);
+ 		}
+	 	li a{
+	 		color: #444;
+	 		padding-left: 10px;
+	 		padding-right: 10px;
+	 		cursor: pointer;
+	 		transition: 0.3s;
+	 		font-size: 17px;
+	 		letter-spacing: 2px;
+	 	}
+	 	li a:hover{
+	 		color: #fff;
+	 	}
+	 	li:after{
+	 		content: "/";
+	 		color:#333;
+	 		font-size: 16px;
+	 	}
+	 	li:last-child a{
+	 		padding-right: 0px;
+	 	}
+	 	li:last-child:after{
+	 		content: "";
+	 	}
+
+	}
+
+}
+
+
+
+#home-banner{
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	background-image: url('/assets/images/happy_background_1360_x_768.jpg');
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	.banner-bg{
+		background: rgba(0,0,0,0.1);
+		position: absolute;
+		z-index: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.banner-text{
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		height: 100px;
+		top:65%;
+		margin-top: -50px;
+		color: #fff;
+
+		.name{
+			font-size: 60px;
+			font-family: 'Fjalla One';
+			color: #fff;
+			position: relative;
+			letter-spacing: 10px;
+			display: inline-block;
+			.hi{
+				letter-spacing: 0px;
+				color:#111;
+				position: absolute;
+				display: inline-block;
+				width: 600px;
+				top: -30px;
+				left: 0px;
+				text-align: left;
+				font-size: 30px;
+				letter-spacing: 5px;
+			}
+			.title{
+				position: absolute;
+				right: 0px;
+				letter-spacing: 5px;
+				bottom: -25px;
+				font-size: 18px;
+				padding-top:4px;
+				border-top: 1px dotted #fff;
+			}
+			
+		}
+		
+	}
+}
+.title:last-letter{
+	letter-spacing:0px !important;
+}

@@ -1,0 +1,34 @@
+#menu-toggled
+  %ul
+    %li 
+      %a About
+    %li
+      %a Resume
+    %li
+      %a Contact
+
+#main-nav
+  .grid-container.mh
+    .grid-100
+      .grid-30.tablet-grid-30.mobile-grid-30.grid-parent.mh
+        %a.site-link
+          =image_tag '/assets/images/heylogo.png', :height=>"75px", :id=>"site-logo"
+      .grid-70.tablet-grid-70.mobile-grid-70.grid-parent.nav-right
+        %ul#main-menu
+        
+          %li
+            %a About
+          %li
+            %a Resume
+          %li
+            %a Blog
+          %li
+            %a Contact
+        %ul#toggle-button
+
+          .label MENU
+
+          %a.toggle-menu
+            .toggle-line
+            .toggle-line
+            .toggle-line
