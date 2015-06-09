@@ -1,0 +1,21 @@
+@import 'variables';
+#about{
+	min-height: 100vh;
+	background-color: $master-color;
+	padding-top: 100px;
+	.section-heading{
+		text-align: center;
+		span{
+			font-size: 40px;
+			line-height: 40px;
+			font-family: 'Fjalla One';
+		}
+	}
+	.subsection-heading{
+		font-size: 30px;
+		font-family: 'Fjalla One';
+		text-align: center;
+		border-bottom:1px dotted $secondary-color;
+	}
+}
+

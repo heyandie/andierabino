@@ -17,10 +17,24 @@ $(function(){
 	});
 	$(".banner-text").css("opacity","0");
 	$("#main-nav").css("top","-100%");
+
+	
 	
     $(window).load(function(){
     	
-	  
+	  	$('a[href^="#"]').on('click',function(){
+			
+
+			var target = $(this).attr("href");
+			var $target = $(target);
+
+			$('html,body').animate({
+				scrollTop:$target.offset().top
+			},500,"swing");
+			return false;
+			
+
+		});
 		
 		setTimeout(function(){
 

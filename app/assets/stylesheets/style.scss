@@ -3,17 +3,17 @@ $secondary-color: #e04146;
 html,body
 {
     width: 100%;
-    height: 100%;
     margin: 0px;
     padding: 0px;
-    //overflow-x: hidden; 
 }
 body {
   padding: 0px;
   margin: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
+  overflow-x:hidden;
+  clear:both;
 }
 .grid-container{
 	max-width: 10000px;
@@ -37,11 +37,12 @@ a {
 	position: absolute;
 	top: 0;
 	left: 0;
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 	visibility: hidden;
 	transition:0.3s;
-	text-align:right;
+	text-align:center;
+	opacity: 0;
 	ul{
 		list-style:none;
 		margin-top: 150px;
@@ -65,15 +66,16 @@ a {
 	
 }
 #menu-toggled.displayed{
-	background: rgba(255,255,255,0.35);
+	background: rgba(230,230,230,0.98);
 	visibility: visible;
+	opacity: 1;
 }
 #main-nav{
 	height: 80px;
 	position: fixed;
 	width: 100%;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	z-index: 100;
 	a.site-link{
 		line-height: 100px;
@@ -91,7 +93,9 @@ a {
 	}
 	#toggle-button{
 		display: none;
+		position: relative;
 	}
+
 	#main-menu{
 	display: inline-block;
 	list-style: none;
@@ -103,59 +107,7 @@ a {
  			line-height: 30px;
  			position: relative;
  		}
- 		.toggle-menu{
- 			display: inline-block;
- 			width: 100px;
- 			position: relative;
- 			height: 30px;
- 			padding: 0px;
- 		}
- 		.label{
- 			position: absolute;
- 			width: 60px;
- 			height: 30px;
- 			line-height: 30px;
- 			z-index: 1000;
- 			font-family: "Fjalla One";
- 			font-size: 12px;
- 			line-height: 30px;
- 			right: 35px;
- 			top: -3px;
- 		}
- 		.toggle-line{
- 			width: 30px;
- 			right: 0;
- 			position: absolute;
- 			padding-right: 0;
- 			border-top: 2px solid #444;
- 			display: block;
- 			margin:5px 0px;
- 			transition:0.5s;
- 		}
- 		.toggle-line:nth-of-type(1){
- 			transform:translate(0px,0px);
- 		}
- 		.toggle-line:nth-of-type(2){
- 			transform:translate(0,5px);
- 		}
- 		.toggle-line:nth-of-type(3){
- 			transform:translate(0,10px);
- 		}
- 		.toggle-menu:not(.toggle-to-close):hover .toggle-line:nth-of-type(1){
- 			transform:translate(0,-2px);
- 		}
- 		.toggle-menu:not(.toggle-to-close):hover .toggle-line:nth-of-type(3){
- 			transform:translate(0,12px);
- 		}
- 		.toggle-to-close .toggle-line:nth-child(even){
- 			transform:  translate(0, 5px)  rotate(-45deg);
- 		}
- 		.toggle-to-close .toggle-line:nth-child(1){
- 			transform:  translate(0, 5px)  rotate(45deg);
- 		}
- 		.toggle-to-close .toggle-line:nth-of-type(3){
- 			transform:  translate(0, 5px) rotate(45deg);
- 		}
+ 		
 	 	li a{
 	 		color: #444;
 	 		padding-left: 10px;
@@ -164,6 +116,7 @@ a {
 	 		transition: 0.3s;
 	 		font-size: 17px;
 	 		letter-spacing: 2px;
+	 		text-decoration: none;
 	 	}
 	 	li a:hover{
 	 		color: #fff;
@@ -181,19 +134,84 @@ a {
 	 	}
 
 	}
+	#toggle-button{
+		.toggle-menu{
+			display: inline-block;
+			width: 100px;
+			position: relative;
+			height: 30px;
+			padding: 0px;
+		}
+		.label{
+			position: absolute;
+			width: 60px;
+			height: 30px;
+			line-height: 30px;
+			z-index: 1000;
+			font-family: "Fjalla One";
+			font-size: 12px;
+			line-height: 30px;
+			right: 35px;
+			top: -3px;
+		}
+		.toggle-line{
+			width: 30px;
+			right: 0;
+			position: absolute;
+			padding-right: 0;
+			border-top: 2px solid #444;
+			display: block;
+			margin:5px 0px;
+			transition:0.5s;
+		}
+		.toggle-line:nth-of-type(1){
+			transform:translate(0px,0px);
+		}
+		.toggle-line:nth-of-type(2){
+			transform:translate(0,5px);
+		}
+		.toggle-line:nth-of-type(3){
+			transform:translate(0,10px);
+		}
+		.toggle-menu:not(.toggle-to-close):hover .toggle-line:nth-of-type(1){
+			transform:translate(0,-2px);
+		}
+		.toggle-menu:not(.toggle-to-close):hover .toggle-line:nth-of-type(3){
+			transform:translate(0,12px);
+		}
+		.toggle-to-close .toggle-line:nth-child(even){
+			transform:  translate(0, 5px)  rotate(-45deg);
+		}
+		.toggle-to-close .toggle-line:nth-child(1){
+			transform:  translate(0, 5px)  rotate(45deg);
+		}
+		.toggle-to-close .toggle-line:nth-of-type(3){
+			transform:  translate(0, 5px) rotate(45deg);
+		}
+	}
+	@media all and (max-width: 767px){
+		#main-menu{
+			display: none !important;
+		}
+		#toggle-button{
+			display: inline-block;
+		}
+	}
 
 }
 
 
 
 #home-banner{
+
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	padding: 0px;
 	background-image: url('/assets/images/happy_background_1360_x_768.jpg');
 	background-position: center center;
 	background-size: cover;
 	position: relative;
+
 	.banner-bg{
 		background: rgba(0,0,0,0.1);
 		position: absolute;
@@ -206,7 +224,7 @@ a {
 		text-align: center;
 		width: 100%;
 		height: 100px;
-		top:65%;
+		top:60%;
 		margin-top: -50px;
 		color: #fff;
 
