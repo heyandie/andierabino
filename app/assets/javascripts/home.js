@@ -82,12 +82,6 @@ $(function(){
 		.setTween("#home-banner",0.5,{opacity:0.5})
 		.addTo(controller);
 
-		new ScrollMagic.Scene({
-			triggerElement: "#about-hello-content",
-			triggerHook:"onCenter",
-			offset:-400,
-			reverse:true
-		});
 
 		$(".subsection-illustration.illus-left,.subsection-illustration.illus-right").each(function(){
 			var elem = $(this);
@@ -95,13 +89,21 @@ $(function(){
 				triggerElement:this,
 				triggerHook:"onCenter",
 				offset:-400,
-				reverse: true
+				reverse: false
 			})
 			.setTween(new TimelineMax().add([
 				 TweenMax.to(elem.find('img').first(),0.5,{left:0}),
-				 TweenMax.to(elem.parents('.subsection').find('.subsection-content').first(),0.8,{opacity:1,delay:0.3})
+				 TweenMax.to(elem.parents('.subsection').find('.subsection-heading').first(),0.8,{opacity:1,delay:0.3}),
+				 TweenMax.to(elem.parents('.subsection').find('.section-p').first(),0.8,{opacity:1,delay:0.5})
 				]))
-			.addTo(controller);
+			.addTo(controller)
+			.on("start", function (event) {
+				$heading=elem.parents('.subsection').find('.subsection-heading');
+				$text=$heading.text();
+			    $heading.shuffleText($text);
+		
+				});
+
 		});
 		
 	

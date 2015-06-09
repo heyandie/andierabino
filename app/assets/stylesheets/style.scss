@@ -221,12 +221,12 @@ a {
 	width: 100%;
 	height: 100vh;
 	padding: 0px;
-	background-image: url('/assets/images/happy_background_1360_x_768.jpg');
+	background-image: url('/assets/images/happy_background_1360_x_768_o.jpg');
 	background-position: center center;
 	background-size: cover;
 	position: relative;
 	.banner-bg{
-		background: rgba(0,0,0,0.1) url('/assets/images/happy_background_1360_x_768.jpg') no-repeat center center;
+		background: rgba(0,0,0,0.1) url('/assets/images/happy_background_1360_x_768_o.jpg') no-repeat center center;
 		position: absolute;
 		-webkit-filter: grayscale(100%);
 		filter: grayscale(100%);
@@ -239,7 +239,7 @@ a {
 		
 	}
 	.animated-banner{
-		@include animation('wow .5s linear 0s forwards');
+		@include animation('wow 1.25s linear 0s forwards');
 	}
 	.banner-text{
 		position: absolute;

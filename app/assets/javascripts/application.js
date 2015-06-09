@@ -18,6 +18,7 @@
 //= require animation.gsap.min
 //= require debug.addIndicators.min
 //= require jpreloader
+//= require jquery.shuffleText.min
 //= require home
 //= require application
 $(function(){

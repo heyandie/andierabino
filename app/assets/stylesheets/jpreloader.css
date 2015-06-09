@@ -110,11 +110,11 @@ body{
 }
 #jprePercentage {
 	color:#333;
-	font-weight:bold;
 	text-align:center;
 	top:100%;
-	font-size: 30px;
+	font-size: 50px;
 	color:#00a99d;
+	font-family: 'Fjalla One';
 }
 
 #jpreButton{
