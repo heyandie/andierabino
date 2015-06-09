@@ -9,18 +9,17 @@
 	.subsection{
 		background-color: $gray-one;
 		padding-top: 30px;
-		padding-bottom: 0px;
+		padding-bottom: 30px;
 		vertical-align: bottom;
 
 		p{
 			font-size: 16px;
 			line-height: 22px !important;
 			color: #444;
+			text-align: justify;
 		}
 	}
-	.subsection-two{
-		background-color: $gray-two;
-	}
+	
 	.section-heading{
 		text-align: center;
 		padding-top: 100px;
@@ -58,7 +57,7 @@
 	}
 	.subsection-illustration img{
 		position: relative;
-		left: -600px;
+		left: -1000px;
 		bottom: 0px;
 	}
 	
@@ -70,6 +69,20 @@
 	}
 	.subsection.light p{
 		color: #fff;
+	}
+
+	.subsection-two{
+		background-color: $master-color;
+
+		p{
+			color: #fff;
+		}
+		.subsection-heading{
+			color: #fff;
+		}
+		.subsection-heading{
+			border-color: #fff;
+		}
 	}
 }
 

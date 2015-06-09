@@ -35,19 +35,19 @@ $(function(){
 			
 
 		});
-		
+		$(".banner-bg").addClass('animated-banner');
 		setTimeout(function(){
 
 			$(".banner-text").animate({
 					opacity: "1"
-				},500,"swing");
-		},1000);
+				},800,"swing");
+		},1300);
 		setTimeout(function(){
 
 			$("#main-nav").animate({
 					top: 0
-				},1000,"swing");
-		},400);
+				},800,"swing");
+		},700);
 
 		// init controller
 		var controller = new ScrollMagic.Controller({
@@ -64,6 +64,12 @@ $(function(){
 		.setTween("#home-banner",0.5,{opacity:0.5})
 		.addTo(controller);
 
+		new ScrollMagic.Scene({
+			triggerElement: "#about-hello-content",
+			triggerHook:"onCenter",
+			offset:-400,
+			reverse:true
+		});
 
 		$(".subsection-illustration.illus-left,.subsection-illustration.illus-right").each(function(){
 			var elem = $(this);
@@ -75,7 +81,7 @@ $(function(){
 			})
 			.setTween(new TimelineMax().add([
 				 TweenMax.to(elem.find('img').first(),0.5,{left:0}),
-				 TweenMax.to(elem.parents('.subsection').find('.subsection-content').first(),0.5,{opacity:1})
+				 TweenMax.to(elem.parents('.subsection').find('.subsection-content').first(),0.8,{opacity:1})
 				]))
 			.addTo(controller);
 		});
