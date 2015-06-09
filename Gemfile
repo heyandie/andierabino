@@ -33,6 +33,7 @@ gem 'bcrypt-ruby', :require=>'bcrypt'
 gem 'haml', '4.0.6'
 
 gem 'rails_12factor', group: :production
+gem 'puma'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

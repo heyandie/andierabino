@@ -691,3 +691,40 @@ Started GET "/assets/jpreloader.js?body=1" for 127.0.0.1 at 2015-06-09 17:49:05 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-09 17:49:05 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-09 18:13:49 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.haml within layouts/application (3.7ms)
+  Rendered layouts/_header.html.haml (9.8ms)
+Completed 200 OK in 178ms (Views: 155.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-06-09 18:13:50 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-09 18:13:50 +0800
+
+
+Started GET "/assets/jpreloader.css?body=1" for 127.0.0.1 at 2015-06-09 18:13:50 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-09 18:13:50 +0800
+
+
+Started GET "/assets/unsemantic.css?body=1" for 127.0.0.1 at 2015-06-09 18:13:50 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-09 18:13:50 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-06-09 18:13:50 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-06-09 18:13:50 +0800
+
+
+Started GET "/assets/jpreloader.js?body=1" for 127.0.0.1 at 2015-06-09 18:13:50 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-09 18:13:50 +0800
