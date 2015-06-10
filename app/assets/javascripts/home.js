@@ -35,9 +35,31 @@ $(function(){
 	$(".banner-text").css("opacity","0");
 	$("#main-nav").css("top","-100%");
 
+
+	
+
+	
 	
 	
     $(window).load(function(){
+
+    	$("span.skill").each(function(index){
+
+
+    		var count = $(this).data('count');
+			var str = ''; 
+			for(var cnt=0; cnt < count; cnt++){ 
+				 if(index%2!=0)
+				 	str += '<span class="indicator red active">★</span>'; 
+				 else
+			     	str += '<span class="indicator active">★</span>'; 
+			} 
+
+			for(var cnt=0; cnt < 10-count; cnt++){ 
+			     str += '<span class="indicator">★</span>'; 
+			} 
+			$(this).after(str);
+		});
     	
 	  	$('a[href^="#"]').on('click',function(){
 			
@@ -48,7 +70,9 @@ $(function(){
 			$('html,body').animate({
 				scrollTop:$target.offset().top
 			},500,"swing");
-			$(".toggle-menu").click();
+
+			if($('.toggle-menu').hasClass('toggle-to-close'))
+				toggleClose();
 			return false;
 			
 
@@ -79,7 +103,9 @@ $(function(){
 			duration:100,
 			offset: -450
 		})
-		.setTween("#home-banner",0.5,{opacity:0.5})
+		.setTween(new TimelineMax().add(
+			[TweenMax.to("#home-banner",0.5,{opacity:0.5}),
+			TweenMax.to("#link-up",1,{opacity:1,visibility:'visible'})]))
 		.addTo(controller);
 
 
@@ -88,25 +114,47 @@ $(function(){
 			new ScrollMagic.Scene({
 				triggerElement:this,
 				triggerHook:"onCenter",
-				offset:-400,
-				reverse: false
+				offset:-200,
+				reverse: true
 			})
 			.setTween(new TimelineMax().add([
-				 TweenMax.to(elem.find('img').first(),0.5,{left:0}),
-				 TweenMax.to(elem.parents('.subsection').find('.subsection-heading').first(),0.8,{opacity:1,delay:0.3}),
-				 TweenMax.to(elem.parents('.subsection').find('.section-p').first(),0.8,{opacity:1,delay:0.5})
+				 TweenMax.to(elem.find('img').first(),0.5,{left:0,delay:0}),
+				 TweenMax.to(elem.parents('.subsection').find('.subsection-heading').first(),0.8,{opacity:1,delay:0}),
+				 TweenMax.to(elem.parents('.subsection').find('.section-p').first(),0.8,{opacity:1,delay:0.4})
 				]))
 			.addTo(controller)
 			.on("start", function (event) {
+
+
 				$heading=elem.parents('.subsection').find('.subsection-heading');
+				
+
+				$p=elem.parents('.subsection').find('.section-p').first();
 				$text=$heading.text();
-			    $heading.shuffleText($text);
+				$heading.shuffleText($text);
 		
-				});
+			
+			});
 
 		});
-		
+
+		new ScrollMagic.Scene({
+			triggerElement: "#contact",
+			offset:-500,
+			reverse:true
+		})
+		.setTween(new TimelineMax().add([
+			TweenMax.to("#contact",1,{'background-color':"#00a99d"}),
+			TweenMax.to("#contact",0.1,{'opacity':"1"}),
+			TweenMax.to("#link-up",1,{color:"#fff"})
+			]))
+		.addTo(controller);
 	
+		new ScrollMagic.Scene({
+			triggerElement: "#contact",
+			offset:-450,
+			reverse:true
+		});
 		
 
 	

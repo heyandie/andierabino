@@ -1,18 +1,22 @@
+.arrow-up
+  .grid-90.prefix-5.relative
+    %a#link-up.fa.fa-arrow-circle-up{href: "#home-banner"}
+
 #menu-toggled
   %ul
     %li 
       %a{ href: "#about"} About
     %li
-      %a Resume
+      %a{ href: "#resume"} Resume
     %li
-      %a Contact
+      %a{ href: "#contact"} Contact
 
 #main-nav
   .grid-container.mh
     .grid-100.grid-parent
       .grid-90.push-5
         .grid-30.tablet-grid-30.mobile-grid-30.grid-parent.mh
-          %a.site-link
+          %a.site-link{href:"/"}
             =image_tag '/assets/images/heylogo.png', :height=>"75px", :id=>"site-logo"
         .grid-70.tablet-grid-70.mobile-grid-70.grid-parent.nav-right
           %ul#main-menu
@@ -20,9 +24,9 @@
             %li
               %a{ href: "#about"} About
             %li
-              %a Resume
+              %a{ href: "#resume"} Resume
             %li
-              %a Contact
+              %a{ href: "#contact"} Contact
           #toggle-button
 
             .label MENU

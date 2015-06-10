@@ -1,9 +1,8 @@
 @import 'variables';
 #about{
 	min-height: 100vh;
-	background-color: $master-color;
 	padding-top: 100px;
-
+	background: $gray-one;
 	.subsection{
 		background-color: $gray-one;
 		padding-top: 30px;
@@ -11,34 +10,15 @@
 		vertical-align: bottom;
 
 		p{
-			font-size: 16px;
-			line-height: 22px !important;
+			font-size: 14px;
+			line-height: 24px !important;
 			color: #444;
 			text-align: justify;
 			opacity: 0;
 		}
 	}
 	
-	.section-heading{
-		text-align: center;
-		padding-top: 100px;
-		padding-bottom: 30px;
-		background: $gray-one;
-		z-index: 1;
-
-		span{
-			font-size: 44px;
-			line-height: 40px;
-			padding: 5px 10px;
-			font-family: 'Fjalla One';
-			letter-spacing: 3px;
-			background: $master-color;
-			color: #fff;
-			text-transform: uppercase;
-
-		}
-	}
-
+	
 	.subsection-heading{
 		font-size: 35px;
 		font-family: 'Fjalla One';
@@ -72,16 +52,16 @@
 	}
 
 	.subsection-two{
-		background-color: $master-color;
+		background-color: $gray-two;
 
 		p{
-			color: #fff;
+			color: #333;
 		}
 		.subsection-heading{
-			color: #fff;
+			color: $secondary-color;
 		}
 		.subsection-heading{
-			border-color: #fff;
+			border-color: $secondary-color;
 		}
 	}
 }
