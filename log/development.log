@@ -48161,3 +48161,660 @@ Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-06-11 04:18:55 +0800
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-11 04:18:55 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-11 04:23:37 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/_about.html.haml (21.7ms)
+  Rendered static_pages/_resume.html.haml (22.3ms)
+  Rendered static_pages/_contact.html.haml (2.0ms)
+  Rendered static_pages/index.html.haml within layouts/application (63.5ms)
+  Rendered layouts/_header.html.haml (9.1ms)
+Completed 200 OK in 784ms (Views: 741.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2015-06-11 04:23:38 +0800
+
+
+Started GET "/assets/jpreloader.css?body=1" for 127.0.0.1 at 2015-06-11 04:23:38 +0800
+
+
+Started GET "/assets/resume.css?body=1" for 127.0.0.1 at 2015-06-11 04:23:38 +0800
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-06-11 04:23:38 +0800
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2015-06-11 04:23:38 +0800
+
+
+Started GET "/assets/contact.css?body=1" for 127.0.0.1 at 2015-06-11 04:23:38 +0800
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2015-06-11 04:23:38 +0800
+
+
+Started GET "/assets/unsemantic.css?body=1" for 127.0.0.1 at 2015-06-11 04:23:38 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-11 04:23:38 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-11 04:23:38 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-11 04:23:38 +0800
+
+
+Started GET "/assets/tweenMax.js?body=1" for 127.0.0.1 at 2015-06-11 04:23:38 +0800
+
+
+Started GET "/assets/scrollToPlugin.js?body=1" for 127.0.0.1 at 2015-06-11 04:23:38 +0800
+
+
+Started GET "/assets/ScrollMagic.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:23:38 +0800
+
+
+Started GET "/assets/animation.gsap.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:23:38 +0800
+
+
+Started GET "/assets/debug.addIndicators.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:23:38 +0800
+
+
+Started GET "/assets/jpreloader.js?body=1" for 127.0.0.1 at 2015-06-11 04:23:38 +0800
+
+
+Started GET "/assets/jquery.shuffleText.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:23:38 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-06-11 04:23:38 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-11 04:23:39 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-11 04:25:07 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/_about.html.haml (12.1ms)
+  Rendered static_pages/_resume.html.haml (2.6ms)
+  Rendered static_pages/_contact.html.haml (0.2ms)
+  Rendered static_pages/index.html.haml within layouts/application (18.6ms)
+  Rendered layouts/_header.html.haml (8.5ms)
+Completed 200 OK in 203ms (Views: 201.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2015-06-11 04:25:07 +0800
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2015-06-11 04:25:07 +0800
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2015-06-11 04:25:07 +0800
+
+
+Started GET "/assets/contact.css?body=1" for 127.0.0.1 at 2015-06-11 04:25:07 +0800
+
+
+Started GET "/assets/jpreloader.css?body=1" for 127.0.0.1 at 2015-06-11 04:25:07 +0800
+
+
+Started GET "/assets/resume.css?body=1" for 127.0.0.1 at 2015-06-11 04:25:07 +0800
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-06-11 04:25:07 +0800
+
+
+Started GET "/assets/unsemantic.css?body=1" for 127.0.0.1 at 2015-06-11 04:25:07 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-11 04:25:07 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-11 04:25:07 +0800
+
+
+Started GET "/assets/ScrollMagic.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:25:07 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-11 04:25:07 +0800
+
+
+Started GET "/assets/tweenMax.js?body=1" for 127.0.0.1 at 2015-06-11 04:25:07 +0800
+
+
+Started GET "/assets/scrollToPlugin.js?body=1" for 127.0.0.1 at 2015-06-11 04:25:07 +0800
+
+
+Started GET "/assets/jquery.shuffleText.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:25:07 +0800
+
+
+Started GET "/assets/debug.addIndicators.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:25:07 +0800
+
+
+Started GET "/assets/jpreloader.js?body=1" for 127.0.0.1 at 2015-06-11 04:25:07 +0800
+
+
+Started GET "/assets/animation.gsap.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:25:07 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-06-11 04:25:07 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-11 04:25:07 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-11 04:26:21 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/_about.html.haml (10.7ms)
+  Rendered static_pages/_resume.html.haml (20.5ms)
+  Rendered static_pages/_contact.html.haml (0.1ms)
+  Rendered static_pages/index.html.haml within layouts/application (34.3ms)
+  Rendered layouts/_header.html.haml (4.0ms)
+Completed 200 OK in 181ms (Views: 180.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2015-06-11 04:26:21 +0800
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2015-06-11 04:26:21 +0800
+
+
+Started GET "/assets/contact.css?body=1" for 127.0.0.1 at 2015-06-11 04:26:21 +0800
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2015-06-11 04:26:21 +0800
+
+
+Started GET "/assets/jpreloader.css?body=1" for 127.0.0.1 at 2015-06-11 04:26:21 +0800
+
+
+Started GET "/assets/resume.css?body=1" for 127.0.0.1 at 2015-06-11 04:26:21 +0800
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-06-11 04:26:21 +0800
+
+
+Started GET "/assets/unsemantic.css?body=1" for 127.0.0.1 at 2015-06-11 04:26:21 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-11 04:26:21 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-11 04:26:21 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-11 04:26:21 +0800
+
+
+Started GET "/assets/tweenMax.js?body=1" for 127.0.0.1 at 2015-06-11 04:26:21 +0800
+
+
+Started GET "/assets/scrollToPlugin.js?body=1" for 127.0.0.1 at 2015-06-11 04:26:21 +0800
+
+
+Started GET "/assets/ScrollMagic.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:26:21 +0800
+
+
+Started GET "/assets/animation.gsap.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:26:21 +0800
+
+
+Started GET "/assets/debug.addIndicators.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:26:21 +0800
+
+
+Started GET "/assets/jpreloader.js?body=1" for 127.0.0.1 at 2015-06-11 04:26:21 +0800
+
+
+Started GET "/assets/jquery.shuffleText.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:26:21 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-06-11 04:26:21 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-11 04:26:21 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-11 04:27:10 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/_about.html.haml (10.9ms)
+  Rendered static_pages/_resume.html.haml (19.7ms)
+  Rendered static_pages/_contact.html.haml (0.1ms)
+  Rendered static_pages/index.html.haml within layouts/application (33.7ms)
+  Rendered layouts/_header.html.haml (3.4ms)
+Completed 200 OK in 181ms (Views: 180.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2015-06-11 04:27:10 +0800
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2015-06-11 04:27:10 +0800
+
+
+Started GET "/assets/contact.css?body=1" for 127.0.0.1 at 2015-06-11 04:27:10 +0800
+
+
+Started GET "/assets/resume.css?body=1" for 127.0.0.1 at 2015-06-11 04:27:10 +0800
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2015-06-11 04:27:10 +0800
+
+
+Started GET "/assets/jpreloader.css?body=1" for 127.0.0.1 at 2015-06-11 04:27:10 +0800
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-06-11 04:27:10 +0800
+
+
+Started GET "/assets/unsemantic.css?body=1" for 127.0.0.1 at 2015-06-11 04:27:10 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-11 04:27:10 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-11 04:27:10 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-11 04:27:10 +0800
+
+
+Started GET "/assets/tweenMax.js?body=1" for 127.0.0.1 at 2015-06-11 04:27:10 +0800
+
+
+Started GET "/assets/scrollToPlugin.js?body=1" for 127.0.0.1 at 2015-06-11 04:27:10 +0800
+
+
+Started GET "/assets/ScrollMagic.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:27:10 +0800
+
+
+Started GET "/assets/animation.gsap.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:27:10 +0800
+
+
+Started GET "/assets/jpreloader.js?body=1" for 127.0.0.1 at 2015-06-11 04:27:10 +0800
+
+
+Started GET "/assets/debug.addIndicators.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:27:10 +0800
+
+
+Started GET "/assets/jquery.shuffleText.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:27:10 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-06-11 04:27:10 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-11 04:27:10 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-11 04:27:36 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/_about.html.haml (8.5ms)
+  Rendered static_pages/_resume.html.haml (18.5ms)
+  Rendered static_pages/_contact.html.haml (0.1ms)
+  Rendered static_pages/index.html.haml within layouts/application (29.8ms)
+  Rendered layouts/_header.html.haml (3.3ms)
+Completed 200 OK in 168ms (Views: 167.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2015-06-11 04:27:36 +0800
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2015-06-11 04:27:36 +0800
+
+
+Started GET "/assets/contact.css?body=1" for 127.0.0.1 at 2015-06-11 04:27:36 +0800
+
+
+Started GET "/assets/resume.css?body=1" for 127.0.0.1 at 2015-06-11 04:27:36 +0800
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2015-06-11 04:27:36 +0800
+
+
+Started GET "/assets/jpreloader.css?body=1" for 127.0.0.1 at 2015-06-11 04:27:36 +0800
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-06-11 04:27:36 +0800
+
+
+Started GET "/assets/unsemantic.css?body=1" for 127.0.0.1 at 2015-06-11 04:27:36 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-11 04:27:36 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-11 04:27:36 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-11 04:27:36 +0800
+
+
+Started GET "/assets/tweenMax.js?body=1" for 127.0.0.1 at 2015-06-11 04:27:36 +0800
+
+
+Started GET "/assets/scrollToPlugin.js?body=1" for 127.0.0.1 at 2015-06-11 04:27:36 +0800
+
+
+Started GET "/assets/ScrollMagic.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:27:36 +0800
+
+
+Started GET "/assets/animation.gsap.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:27:36 +0800
+
+
+Started GET "/assets/debug.addIndicators.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:27:36 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-11 04:27:36 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-06-11 04:27:36 +0800
+
+
+Started GET "/assets/jpreloader.js?body=1" for 127.0.0.1 at 2015-06-11 04:27:36 +0800
+
+
+Started GET "/assets/jquery.shuffleText.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:27:36 +0800
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2015-06-11 04:28:06 +0800
+
+
+Started GET "/assets/resume.css?body=1" for 127.0.0.1 at 2015-06-11 04:28:06 +0800
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2015-06-11 04:28:06 +0800
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2015-06-11 04:28:06 +0800
+
+
+Started GET "/assets/jpreloader.css?body=1" for 127.0.0.1 at 2015-06-11 04:28:06 +0800
+
+
+Started GET "/assets/contact.css?body=1" for 127.0.0.1 at 2015-06-11 04:28:06 +0800
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-06-11 04:28:06 +0800
+
+
+Started GET "/assets/unsemantic.css?body=1" for 127.0.0.1 at 2015-06-11 04:28:06 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-11 04:28:06 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-11 04:29:52 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/_about.html.haml (9.7ms)
+  Rendered static_pages/_resume.html.haml (18.2ms)
+  Rendered static_pages/_contact.html.haml (0.1ms)
+  Rendered static_pages/index.html.haml within layouts/application (31.9ms)
+  Rendered layouts/_header.html.haml (3.3ms)
+Completed 200 OK in 171ms (Views: 170.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2015-06-11 04:29:53 +0800
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2015-06-11 04:29:53 +0800
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2015-06-11 04:29:53 +0800
+
+
+Started GET "/assets/contact.css?body=1" for 127.0.0.1 at 2015-06-11 04:29:53 +0800
+
+
+Started GET "/assets/jpreloader.css?body=1" for 127.0.0.1 at 2015-06-11 04:29:53 +0800
+
+
+Started GET "/assets/resume.css?body=1" for 127.0.0.1 at 2015-06-11 04:29:53 +0800
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-06-11 04:29:53 +0800
+
+
+Started GET "/assets/unsemantic.css?body=1" for 127.0.0.1 at 2015-06-11 04:29:53 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-11 04:29:53 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-11 04:29:53 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-11 04:29:53 +0800
+
+
+Started GET "/assets/tweenMax.js?body=1" for 127.0.0.1 at 2015-06-11 04:29:53 +0800
+
+
+Started GET "/assets/scrollToPlugin.js?body=1" for 127.0.0.1 at 2015-06-11 04:29:53 +0800
+
+
+Started GET "/assets/ScrollMagic.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:29:53 +0800
+
+
+Started GET "/assets/debug.addIndicators.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:29:53 +0800
+
+
+Started GET "/assets/animation.gsap.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:29:53 +0800
+
+
+Started GET "/assets/jpreloader.js?body=1" for 127.0.0.1 at 2015-06-11 04:29:53 +0800
+
+
+Started GET "/assets/jquery.shuffleText.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:29:53 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-06-11 04:29:53 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-11 04:29:53 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-11 04:30:31 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/_about.html.haml (8.8ms)
+  Rendered static_pages/_resume.html.haml (18.6ms)
+  Rendered static_pages/_contact.html.haml (0.1ms)
+  Rendered static_pages/index.html.haml within layouts/application (30.3ms)
+  Rendered layouts/_header.html.haml (3.4ms)
+Completed 200 OK in 168ms (Views: 167.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2015-06-11 04:30:31 +0800
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2015-06-11 04:30:31 +0800
+
+
+Started GET "/assets/contact.css?body=1" for 127.0.0.1 at 2015-06-11 04:30:31 +0800
+
+
+Started GET "/assets/jpreloader.css?body=1" for 127.0.0.1 at 2015-06-11 04:30:31 +0800
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2015-06-11 04:30:31 +0800
+
+
+Started GET "/assets/resume.css?body=1" for 127.0.0.1 at 2015-06-11 04:30:31 +0800
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-06-11 04:30:31 +0800
+
+
+Started GET "/assets/unsemantic.css?body=1" for 127.0.0.1 at 2015-06-11 04:30:31 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-11 04:30:31 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-11 04:30:31 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-11 04:30:31 +0800
+
+
+Started GET "/assets/tweenMax.js?body=1" for 127.0.0.1 at 2015-06-11 04:30:31 +0800
+
+
+Started GET "/assets/scrollToPlugin.js?body=1" for 127.0.0.1 at 2015-06-11 04:30:31 +0800
+
+
+Started GET "/assets/ScrollMagic.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:30:31 +0800
+
+
+Started GET "/assets/animation.gsap.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:30:31 +0800
+
+
+Started GET "/assets/debug.addIndicators.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:30:31 +0800
+
+
+Started GET "/assets/jpreloader.js?body=1" for 127.0.0.1 at 2015-06-11 04:30:31 +0800
+
+
+Started GET "/assets/jquery.shuffleText.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:30:31 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-06-11 04:30:31 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-11 04:30:31 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-11 04:31:17 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/_about.html.haml (9.1ms)
+  Rendered static_pages/_resume.html.haml (2.5ms)
+  Rendered static_pages/_contact.html.haml (0.1ms)
+  Rendered static_pages/index.html.haml within layouts/application (14.2ms)
+  Rendered layouts/_header.html.haml (3.4ms)
+Completed 200 OK in 229ms (Views: 227.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2015-06-11 04:31:18 +0800
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2015-06-11 04:31:18 +0800
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2015-06-11 04:31:18 +0800
+
+
+Started GET "/assets/contact.css?body=1" for 127.0.0.1 at 2015-06-11 04:31:18 +0800
+
+
+Started GET "/assets/unsemantic.css?body=1" for 127.0.0.1 at 2015-06-11 04:31:18 +0800
+
+
+Started GET "/assets/resume.css?body=1" for 127.0.0.1 at 2015-06-11 04:31:18 +0800
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-06-11 04:31:18 +0800
+
+
+Started GET "/assets/jpreloader.css?body=1" for 127.0.0.1 at 2015-06-11 04:31:18 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-11 04:31:18 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-11 04:31:18 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-11 04:31:18 +0800
+
+
+Started GET "/assets/tweenMax.js?body=1" for 127.0.0.1 at 2015-06-11 04:31:18 +0800
+
+
+Started GET "/assets/ScrollMagic.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:31:18 +0800
+
+
+Started GET "/assets/scrollToPlugin.js?body=1" for 127.0.0.1 at 2015-06-11 04:31:18 +0800
+
+
+Started GET "/assets/animation.gsap.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:31:18 +0800
+
+
+Started GET "/assets/debug.addIndicators.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:31:18 +0800
+
+
+Started GET "/assets/jpreloader.js?body=1" for 127.0.0.1 at 2015-06-11 04:31:18 +0800
+
+
+Started GET "/assets/jquery.shuffleText.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:31:18 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-06-11 04:31:18 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-11 04:31:18 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-11 04:31:33 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/_about.html.haml (12.5ms)
+  Rendered static_pages/_resume.html.haml (9.2ms)
+  Rendered static_pages/_contact.html.haml (0.1ms)
+  Rendered static_pages/index.html.haml within layouts/application (25.1ms)
+  Rendered layouts/_header.html.haml (3.5ms)
+Completed 200 OK in 208ms (Views: 207.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2015-06-11 04:31:33 +0800
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2015-06-11 04:31:33 +0800
+
+
+Started GET "/assets/contact.css?body=1" for 127.0.0.1 at 2015-06-11 04:31:33 +0800
+
+
+Started GET "/assets/jpreloader.css?body=1" for 127.0.0.1 at 2015-06-11 04:31:33 +0800
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2015-06-11 04:31:33 +0800
+
+
+Started GET "/assets/resume.css?body=1" for 127.0.0.1 at 2015-06-11 04:31:33 +0800
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-06-11 04:31:33 +0800
+
+
+Started GET "/assets/unsemantic.css?body=1" for 127.0.0.1 at 2015-06-11 04:31:33 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-11 04:31:33 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-11 04:31:33 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-11 04:31:33 +0800
+
+
+Started GET "/assets/tweenMax.js?body=1" for 127.0.0.1 at 2015-06-11 04:31:33 +0800
+
+
+Started GET "/assets/scrollToPlugin.js?body=1" for 127.0.0.1 at 2015-06-11 04:31:33 +0800
+
+
+Started GET "/assets/animation.gsap.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:31:33 +0800
+
+
+Started GET "/assets/ScrollMagic.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:31:33 +0800
+
+
+Started GET "/assets/debug.addIndicators.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:31:33 +0800
+
+
+Started GET "/assets/jquery.shuffleText.min.js?body=1" for 127.0.0.1 at 2015-06-11 04:31:33 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-06-11 04:31:33 +0800
+
+
+Started GET "/assets/jpreloader.js?body=1" for 127.0.0.1 at 2015-06-11 04:31:33 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-11 04:31:33 +0800
