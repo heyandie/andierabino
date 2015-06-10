@@ -225,6 +225,7 @@ a {
 	background-position: center center;
 	background-size: cover;
 	position: relative;
+	transition: 0.5s;
 	.banner-bg{
 		background: rgba(0,0,0,0.1) url('/assets/images/happy_background_1360_x_768_o.jpg') no-repeat center center;
 		position: absolute;
