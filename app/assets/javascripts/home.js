@@ -110,7 +110,7 @@ $(function(){
 			var elem = $(this);
 			new ScrollMagic.Scene({
 				triggerElement:this,
-				triggerHook:"onCenter",
+				triggerHook:"onLeave",
 				offset:-200,
 				reverse: true
 			})
