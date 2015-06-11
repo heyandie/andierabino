@@ -3,6 +3,11 @@
   %head
     %title Hey Andie.
     %meta{:content => "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0", :name=>"viewport"}
+    %meta{:property=>"og:title", :content=>"Hey Andie"}
+    %meta{:property=>"og:description", :content=>"I am Andie Rabino. I took up a bachelor’s degree on Computer Science. It was originally Computer Engineering but I realized that I would love to pursue software engineering instead. And eventually, walked down the path of web development."}
+    %meta{:property=>"og:url", :content=>"heyandie.herokuapp.com"}
+    - imagelink = root_url + "assets/images/happy_background_1360_x_768_o.jpg"
+    %meta{:property=>"og:image", :content=>imagelink}
     = stylesheet_link_tag 'application'
     = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Fjalla+One'
     = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Muli'
