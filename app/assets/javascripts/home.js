@@ -92,13 +92,10 @@ $(function(){
 		},700);
 
 		// init controller
-		var controller = new ScrollMagic.Controller({
-			globalSceneOptions:{
-				triggerHook: 'onLeave'
-			}
-		});
+		var controller = new ScrollMagic.Controller();
 		
 		new ScrollMagic.Scene({
+			triggerHook: "onLeave",
 			triggerElement: '#about',
 			duration:100,
 			offset: -450
@@ -118,9 +115,9 @@ $(function(){
 				reverse: true
 			})
 			.setTween(new TimelineMax().add([
-				 TweenMax.to(elem.find('img').first(),0.5,{left:0,delay:0}),
-				 TweenMax.to(elem.parents('.subsection').find('.subsection-heading').first(),0.8,{opacity:1,delay:0}),
-				 TweenMax.to(elem.parents('.subsection').find('.section-p').first(),0.8,{opacity:1,delay:0.4})
+				 TweenMax.to(elem.parents('.subsection').find('.subsection-heading').first(),0.5,{opacity:1,delay:0}),
+				 TweenMax.to(elem.parents('.subsection').find('.section-p').first(),0.7,{opacity:1,delay:0}),
+				 TweenMax.to(elem.find('img').first(),0.3,{left:0,delay:0})
 				]))
 			.addTo(controller)
 			.on("start", function (event) {
@@ -140,22 +137,17 @@ $(function(){
 
 		new ScrollMagic.Scene({
 			triggerElement: "#contact",
-			offset:-500,
-			reverse:true
+			triggerHook:"onEnter",
+			reverse:true,
+			offset:-300
 		})
 		.setTween(new TimelineMax().add([
 			TweenMax.to("#contact",1,{'background-color':"#00a99d"}),
-			TweenMax.to("#contact",0.1,{'opacity':"1"}),
+			TweenMax.to("#contact",0.3,{'opacity':"1"}),
 			TweenMax.to("#link-up",1,{color:"#fff"})
 			]))
 		.addTo(controller);
-	
-		new ScrollMagic.Scene({
-			triggerElement: "#contact",
-			offset:-450,
-			reverse:true
-		});
-		
+
 
 	
     });

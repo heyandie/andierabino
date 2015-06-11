@@ -10,17 +10,19 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require greensock/TweenMax.min
 //= require jquery
 //= require jquery_ujs
-//= require tweenMax
 //= require scrollToPlugin
-//= require ScrollMagic.min
-//= require animation.gsap.min
-//= require debug.addIndicators.min
 //= require jpreloader
 //= require jquery.shuffleText.min
 //= require home
+//= require modernizr.custom.min
+//= require scrollmagic/uncompressed/ScrollMagic
+//= require scrollmagic/uncompressed/plugins/debug.addIndicators
+//= require scrollmagic/uncompressed/plugins/animation.gsap
 //= require application
+
 $(function(){
 	
 	var $window = $(window);		//Window object
