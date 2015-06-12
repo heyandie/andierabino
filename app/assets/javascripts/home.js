@@ -111,13 +111,13 @@ $(function(){
 			new ScrollMagic.Scene({
 				triggerElement:this,
 				triggerHook:"onLeave",
-				offset:-200,
+				offset:-350,
 				reverse: true
 			})
 			.setTween(new TimelineMax().add([
 				 TweenMax.to(elem.parents('.subsection').find('.subsection-heading').first(),0.5,{opacity:1,delay:0}),
 				 TweenMax.to(elem.parents('.subsection').find('.section-p').first(),0.7,{opacity:1,delay:0}),
-				 TweenMax.to(elem.find('img').first(),0.3,{left:0,delay:0})
+				 TweenMax.to(elem.find('img').first(),0.3,{left:0,opacity:1,delay:0})
 				]))
 			.addTo(controller)
 			.on("start", function (event) {
@@ -139,7 +139,7 @@ $(function(){
 			triggerElement: "#contact",
 			triggerHook:"onEnter",
 			reverse:true,
-			offset:-300
+			offset:-150
 		})
 		.setTween(new TimelineMax().add([
 			TweenMax.to("#contact",1,{'background-color':"#00a99d"}),
