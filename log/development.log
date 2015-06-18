@@ -63559,3 +63559,76 @@ Started GET "/assets/scrollmagic/uncompressed/plugins/animation.gsap.js?body=1" 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-12 15:51:48 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-18 11:40:19 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/_about.html.haml (9.2ms)
+  Rendered static_pages/_resume.html.haml (12.1ms)
+  Rendered static_pages/_contact.html.haml (1.1ms)
+  Rendered static_pages/index.html.haml within layouts/application (30.0ms)
+  Rendered layouts/_header.html.haml (27.3ms)
+Completed 200 OK in 499ms (Views: 474.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2015-06-18 11:40:19 +0800
+
+
+Started GET "/assets/contact.css?body=1" for 127.0.0.1 at 2015-06-18 11:40:19 +0800
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2015-06-18 11:40:19 +0800
+
+
+Started GET "/assets/unsemantic.css?body=1" for 127.0.0.1 at 2015-06-18 11:40:19 +0800
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2015-06-18 11:40:19 +0800
+
+
+Started GET "/assets/resume.css?body=1" for 127.0.0.1 at 2015-06-18 11:40:19 +0800
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-06-18 11:40:19 +0800
+
+
+Started GET "/assets/jpreloader.css?body=1" for 127.0.0.1 at 2015-06-18 11:40:19 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-18 11:40:19 +0800
+
+
+Started GET "/assets/greensock/TweenMax.min.js?body=1" for 127.0.0.1 at 2015-06-18 11:40:19 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-18 11:40:19 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-18 11:40:20 +0800
+
+
+Started GET "/assets/scrollToPlugin.js?body=1" for 127.0.0.1 at 2015-06-18 11:40:20 +0800
+
+
+Started GET "/assets/jpreloader.js?body=1" for 127.0.0.1 at 2015-06-18 11:40:20 +0800
+
+
+Started GET "/assets/jquery.shuffleText.min.js?body=1" for 127.0.0.1 at 2015-06-18 11:40:20 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-06-18 11:40:20 +0800
+
+
+Started GET "/assets/modernizr.custom.min.js?body=1" for 127.0.0.1 at 2015-06-18 11:40:20 +0800
+
+
+Started GET "/assets/scrollmagic/uncompressed/ScrollMagic.js?body=1" for 127.0.0.1 at 2015-06-18 11:40:20 +0800
+
+
+Started GET "/assets/scrollmagic/uncompressed/plugins/debug.addIndicators.js?body=1" for 127.0.0.1 at 2015-06-18 11:40:20 +0800
+
+
+Started GET "/assets/scrollmagic/uncompressed/plugins/animation.gsap.js?body=1" for 127.0.0.1 at 2015-06-18 11:40:20 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-18 11:40:20 +0800
