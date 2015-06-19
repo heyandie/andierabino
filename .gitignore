@@ -2,3 +2,13 @@
 npm-debug.log
 .DS_Store
 /*.env
+/public/assets/*
+
+
+## Environment normalisation:
+/.bundle
+/vendor/bundle
+
+
+/log/*
+/tmp/*

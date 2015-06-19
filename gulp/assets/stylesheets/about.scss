@@ -1,4 +1,5 @@
-@import 'variables';
+@import "helpers/_variables";
+@import "helpers/_mixins";
 #about{
 	min-height: 100vh;
 	padding-top: 100px;
@@ -17,8 +18,8 @@
 			opacity: 0;
 		}
 	}
-	
-	
+
+
 	.subsection-heading{
 		font-size: 35px;
 		font-family: 'Fjalla One';
@@ -41,7 +42,7 @@
 		bottom: 0px;
 		opacity: 0;
 	}
-	
+
 	.subsection-illustration.illus-right img{
 		left: 600px;
 	}

@@ -1,4 +1,5 @@
-@import 'variables';
+@import "helpers/_variables";
+@import "helpers/_mixins";
 #resume{
 	min-height: 100vh;
 	background: #f0f0f0;
@@ -14,7 +15,7 @@
 	}
 	.label-title{
 		font-weight: bold;
-		color: $master-text-color;
+		color: $primary-text-color;
 	}
 	.label-location{
 		padding-bottom: 12px;
@@ -29,7 +30,7 @@
 			top:5px;
 		}
 		.fa-flag.last{
-			color: $master-color;
+			color: $primary-color;
 		}
 	}
 
@@ -40,7 +41,7 @@
 	.award::before{
 		content: "";
 		position: absolute;
-		background-color: $master-color;
+		background-color: $primary-color;
 		border-radius: 100%;
 		width: 8px;
 		height: 8px;
@@ -49,7 +50,7 @@
 	}
 }
 .resume-big-row{
-	border-bottom: 1px dotted $master-color;
+	border-bottom: 1px dotted $primary-color;
 	margin-bottom: 45px;
 }
 .resume-row{
@@ -79,7 +80,7 @@
 
 	}
 	.indicator.active{
-		color: $master-color;
+		color: $primary-color;
 	}
 	.indicator.red{
 		color: $secondary-color;
