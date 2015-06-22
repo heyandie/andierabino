@@ -23,7 +23,12 @@
     "gulp-rev-collector": "^1.0.0"
   },
   "devDependencies": {
+    "del": "^1.2.0",
+    "gulp-changed": "^1.2.1",
+    "gulp-min": "0.0.2",
+    "gulp-minify-css": "^1.1.6",
     "gulp-rev": "^5.0.1",
+    "gulp-rev-all": "^0.8.21",
     "gulp-rev-collector": "^1.0.0"
   },
   "scripts": {

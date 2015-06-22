@@ -1,14 +1,11 @@
 var publicAssets  = "./public/assets";
 var sourceFiles   = "./gulp/assets";
-
+var viewFolder = "./app/views";
 module.exports = {
   publicAssets: publicAssets,
   browserSync: {
-    notify: false,
-    port: process.env.PORT || 3000,
-    server: {
-      baseDir: "./"
-    }
+    proxy: 'localhost:3000',
+    files: ['./app/views/**']
   },
   sass: {
     src: sourceFiles + "/stylesheets/**/*.scss",
@@ -17,5 +14,9 @@ module.exports = {
       indentedSyntax: true,
       imagePath: '/assets/images'
     }
+  },
+  images: {
+    src: sourceFiles + "/images/**",
+    dest: publicAssets + "/images"
   }
 }
