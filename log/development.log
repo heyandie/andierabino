@@ -71787,3 +71787,19 @@ ActionController::RoutingError (No route matches [GET] "/images/happy_background
   Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
   Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
   Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (17.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-22 17:50:54 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/_about.html.haml (6.1ms)
+  Rendered static_pages/_resume.html.haml (1.7ms)
+  Rendered static_pages/_contact.html.haml (0.1ms)
+  Rendered static_pages/index.html.haml within layouts/application (18.0ms)
+  Rendered layouts/_header.html.haml (2.2ms)
+Completed 200 OK in 153ms (Views: 152.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-22 17:50:54 +0800
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2015-06-22 17:50:54 +0800
