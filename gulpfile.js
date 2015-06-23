@@ -35,7 +35,7 @@ gulp.task('images', function() {
 });
 
 gulp.task('clean', function() {
-  del(publicAssets);
+  del(['public/assets/rev-manifest.json','public/assets/stylesheets','public/assets/images']);
 });
 
 gulp.task('rev-assets', function() {
@@ -55,9 +55,7 @@ gulp.task('rev', ['rev-assets'], function() {
 
 gulp.task('build', function(callback) {
 
-  var tasks = [['sass'], 'images'];
-  if(!argv.production)
-    tasks.unshift('clean')
+  var tasks = ['clean', ['sass'], 'images'];
   if(argv.production)
     tasks.push('rev');
   tasks.push(callback);
