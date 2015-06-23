@@ -8,6 +8,8 @@ var revCollector = require('gulp-rev-collector');
 var rev = require('gulp-rev');
 var imageMin = require('gulp-imagemin');
 var minifyCSS = require('gulp-minify-css');
+var argv = require('yargs').argv
+var gulpif = require('gulp-if');
 
 var src = {
   sass: ['gulp/assets/stylesheets/global.scss'],
@@ -17,14 +19,13 @@ var src = {
 var publicAssets = './public/assets';
 
 gulp.task('sass', function() {
-  var stream = gulp.src(src.sass)
+  return gulp.src(src.sass)
     .pipe(sourceMaps.init())
     .pipe(sass({imagePath: src.images }))
     .pipe(autoPrefixer())
     .pipe(sourceMaps.write())
-  if(process.env.RAILS_ENV === 'production')
-    stream.pipe(minifyCSS({compatibility: 'ie8'}))
-  return stream.pipe(gulp.dest('public/assets/stylesheets'));
+    .pipe(gulpif(argv.production, minifyCSS({compatibility: 'ie8'})))
+    .pipe(gulp.dest('public/assets/stylesheets'));
 });
 
 gulp.task('images', function() {
@@ -54,8 +55,8 @@ gulp.task('rev', ['rev-assets'], function() {
 
 gulp.task('build', function(callback) {
   var tasks = ['clean', ['sass'], 'images'];
-  console.log(process.env.RAILS_ENV);
-  tasks.push('rev');
+  if(argv.production)
+    tasks.push('rev');
   tasks.push(callback);
   gulpSequence.apply(this, tasks);
 });
