@@ -33,7 +33,7 @@
     "gulp-rev-rails-manifest": "0.0.1"
   },
   "scripts": {
-    "postinstall": "process.env.RAILS_ENV=production gulp build"
+    "postinstall": "gulp build"
   },
   "author": "",
   "license": "ISC"
