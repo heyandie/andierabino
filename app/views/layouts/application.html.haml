@@ -9,7 +9,7 @@
     - imagelink = root_url + "assets/images/happy_background_1360_x_768_o.jpg"
     %meta{:property=>"og:image", :content=>imagelink}
     - stylesheet_url = gulp_asset_path('stylesheets/global.css')
-    
+    %link{:rel=>"stylesheet", :href=>stylesheet_url}
 
   %body{'data-env' => Rails.env}
     =render 'layouts/header'
