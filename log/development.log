@@ -67934,3 +67934,59 @@ Started GET "/assets/scrollmagic/uncompressed/plugins/animation.gsap.js?body=1" 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-23 16:05:02 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-23 16:52:11 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/_about.html.haml (7.8ms)
+  Rendered static_pages/_resume.html.haml (1.7ms)
+  Rendered static_pages/_contact.html.haml (0.1ms)
+  Rendered static_pages/index.html.haml within layouts/application (12.1ms)
+  Rendered layouts/_header.html.haml (2.5ms)
+Completed 200 OK in 115ms (Views: 114.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/greensock/TweenMax.min.js?body=1" for 127.0.0.1 at 2015-06-23 16:52:11 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-23 16:52:11 +0800
+
+
+Started GET "/assets/jquery.shuffleText.min.js?body=1" for 127.0.0.1 at 2015-06-23 16:52:11 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-23 16:52:11 +0800
+
+
+Started GET "/assets/scrollToPlugin.js?body=1" for 127.0.0.1 at 2015-06-23 16:52:11 +0800
+
+
+Started GET "/assets/jpreloader.js?body=1" for 127.0.0.1 at 2015-06-23 16:52:11 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-06-23 16:52:11 +0800
+
+
+Started GET "/assets/modernizr.custom.min.js?body=1" for 127.0.0.1 at 2015-06-23 16:52:11 +0800
+
+
+Started GET "/assets/scrollmagic/uncompressed/ScrollMagic.js?body=1" for 127.0.0.1 at 2015-06-23 16:52:11 +0800
+
+
+Started GET "/assets/scrollmagic/uncompressed/plugins/debug.addIndicators.js?body=1" for 127.0.0.1 at 2015-06-23 16:52:11 +0800
+
+
+Started GET "/assets/scrollmagic/uncompressed/plugins/animation.gsap.js?body=1" for 127.0.0.1 at 2015-06-23 16:52:11 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-23 16:52:11 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-23 16:53:40 +0800
+Processing by StaticPagesController#index as */*
+  Rendered static_pages/_about.html.haml (9.3ms)
+  Rendered static_pages/_resume.html.haml (11.6ms)
+  Rendered static_pages/_contact.html.haml (1.0ms)
+  Rendered static_pages/index.html.haml within layouts/application (34.9ms)
+  Rendered layouts/_header.html.haml (6.2ms)
+Completed 200 OK in 155ms (Views: 154.9ms | ActiveRecord: 0.0ms)
