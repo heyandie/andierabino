@@ -54,7 +54,10 @@ gulp.task('rev', ['rev-assets'], function() {
 
 
 gulp.task('build', function(callback) {
-  var tasks = ['clean', ['sass'], 'images'];
+
+  var tasks = [['sass'], 'images'];
+  if(!argv.production)
+    tasks.unshift('clean')
   if(argv.production)
     tasks.push('rev');
   tasks.push(callback);
