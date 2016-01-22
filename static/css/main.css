@@ -1,0 +1,347 @@
+@import 'unsemantic.css';
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Bold-webfont.eot');
+    src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: bold;
+    font-style: bold;
+
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Light-webfont.eot');
+    src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Light-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Open Sans';
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  color: #333;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+#section-one {
+  background-color: #e7e7e7;
+}
+
+.blog-thumbnail {
+  padding: 60% 0 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-thumbnail > .image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.blog-thumbnail-title {
+  padding: 10px 0;
+  font-size: 1.8rem;
+}
+
+.blog-thumbnail-category {
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.blog-thumbnail-excerpt {
+  overflow: hidden;
+}
+
+#section-contact {
+  background-color: #00a99d;
+  color: #fff;
+}
+
+#section-contact p {
+  color: #fff;
+}
+
+#section-latest {
+  background: #eee;
+}
+
+#section-footer {
+  background-color: #00a99d;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+}
+
+/* ====== */
+/* Header */
+/* ====== */
+
+#header {
+  background-color: #e7e7e7;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header-inner {
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -webkit-flex-direction: row;
+    -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  }
+
+.header-inner > div {
+  width: 50%;
+}
+
+.header-inner > div > a {
+  color: #555;
+}
+
+/* ==== */
+/* Post */
+/* ==== */
+
+.post-details {
+}
+
+.post-category {
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px;
+  font-size: 1.2rem;
+  background-color: #00a99d;
+  color: #fff;
+}
+
+/* ==== */
+/* Blog */
+/* ==== */
+
+.blog-list-category {
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  padding: 3px;
+  font-size: 1.1rem;
+  background-color: #00a99d;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+/* ========== */
+/* Typography */
+/* ========== */
+
+h1 {
+  font-size: 5.6rem;
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+h2 {
+  font-size: 4.5rem;
+  margin: 0;
+  color: #444;
+}
+
+h3 {
+  font-size: 3.4rem;
+  margin: 0;
+  color: #454545;
+}
+
+h4 {
+  font-size: 2.4rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+p {
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2.6rem;
+  max-width: 640px;
+  color: #555;
+}
+
+p, .caption, .meta {
+  font-family: 'Roboto Slab';
+}
+
+.emphasis {
+  font-weight: bold;
+}
+
+.headline {
+  font-weight: normal;
+  font-size: 2.1rem;
+}
+
+.title {
+  font-size: 2.1rem;
+  font-weight: bold;
+}
+
+.title-normal {
+  font-weight: normal;
+}
+
+.title-number {
+  display: inline-block;
+  color: white;
+  background-color: #00a99d;
+  width: 28px;
+  height: 28px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 28px;
+}
+
+h3 > .title-number {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  font-size: 3rem;
+}
+
+.caption {
+  font-size: 1.4rem;
+}
+
+.meta {
+  font-size: 1.2rem;
+}
+
+.text-gray {
+  color: #888;
+}
+
+
+.meta-link {
+  color: #00a99d;
+}
+
+.highlight {
+  color: #00a99d;
+}
+
+.text-thin {
+  font-weight: 100;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* ========= */
+/* Utilities */
+/* ========= */
+
+.divider {
+  border-top: 1px dotted #ccc;
+  height: 1px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#disqus_thread {
+  max-width: 640px;
+}
+
+.fb-comments, .fb-comments span, .fb-comments.fb_iframe_widget span iframe {
+  width: 100% !important;
+}
+
+.float-right {
+  float: right;
+}
+
+.max-10000 {
+  max-width: 10000px;
+}
+.padded-right-15 {
+  padding-right: 15px;
+}
+
+.padded-right-20 {
+  padding-right: 20px;
+}
+
+.padded-right-25 {
+  padding-right: 25px;
+}
+.padded-v-15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.padded-v-25 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.padded-v-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.spacer {
+  height: 30px;
+}

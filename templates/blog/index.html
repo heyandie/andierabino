@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<section id="section-one" class="grid-container max-10000 padded-v-25">
+
+  <div class="grid-container">
+    <div class="grid-100">
+      <div class="grid-90 prefix-10 tablet-grid-90 tablet-prefix-5 mobile-grid-90 mobile-prefix-5">
+        <h1 class="emphasis"><span class="highlight">Blog.</span></h1>
+        <h4 class="text-thin">Some reads about <span class="highlight">web design</span> and <span class="highlight">development</span> + random interests.
+        </h4>
+      </div>
+    </div>
+    <br>
+    <br>
+  </div>
+
+</section>
+
+
+<div class="grid-container">
+  <div class="grid-90 prefix-10 tablet-grid-90 tablet-prefix-5 mobile-grid-90 mobile-prefix-5 padded-v-50">
+    <div class="grid-100 grid-parent">
+
+        {% for post in posts %}
+        <div class="grid-35">
+          <div class="blog-thumbnail">
+            <div class="image" style="background-image:url('{{post.image}}')">
+            </div>
+          </div>
+        </div>
+        <div class="grid-65 grid-parent">
+          <div class="grid-100">
+              <div class="grid-100">
+                <div class="blog-list-category emphasis">{{ post.category }}</div>
+                <a href="/article/{{post.slug}}"><h4>
+                  <b>{{post.title}}</b>
+                </h4></a>
+
+                <p class="grid-100">
+                  {{post.excerpt}} <a class="meta meta-link" href="/article/{{post.slug}}">[ READ MORE ]</a>
+                </p>
+                <div class="grid-100 text-thin meta padded-v-15">
+                  {% load l10n %}
+
+                  {% localize on %}
+                      Posted {{post.posted|date:"M d, Y g:i A" }}
+                  {% endlocalize %}
+                </div>
+
+            </div>
+          </div>
+
+        </div>
+
+
+        {% endfor %}
+    </div>
+    <div class="grid-100 divider"></div>
+  </div>
+</div>
+
+{% endblock %}
