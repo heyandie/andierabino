@@ -1,5 +1,14 @@
 {% extends 'base.html' %}
 
+{% block og_tags %}
+  {% for key, value in og_tags.items  %}
+      {% if value != none %}
+          <meta property="{{ key }}" content="{{ value }}" />
+      {% endif %}
+  {% endfor %}
+  <meta property="title" content="{{title}} | Andie Rabino" />
+{% endblock %}
+
 {% block main %}
 
 <div class="grid-container">
