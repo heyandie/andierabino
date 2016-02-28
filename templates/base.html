@@ -1,0 +1,76 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+<head>
+  <title>Hey Andie</title>
+  <meta charset="utf-8"></meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta property="fb:admins" content="andie.rabino"/>
+  {% block og_tags %}
+  {% endblock %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <header id="header" class="grid-container max-10000">
+    <div class="grid-container">
+      <div class="grid-100">
+        <div class="header-inner grid-80 prefix-10 tablet-grid-100 mobile-grid-100">
+          <div>
+            <a class="brand-logo" href="/">heyandie</a>
+          </div>
+          <div class="text-right">
+            <a href="#about">ABOUT</a>&nbsp;&nbsp;
+            <a href="#contact">CONTACT</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  {% block main %}
+
+  {% endblock %}
+  <section id="about" class="grid-container max-10000 text-center padded-v-25">
+    <div class="grid-container">
+      <div class="grid-80 prefix-10 tablet-grid-100 mobile-grid-100">
+        <h3 class="text-center padded-v-25">ABOUT</h3>
+        <div class="grid-33 tablet-grid-33">
+          <div class="title"><span class="title-number">1</span><br>Hello world</div>
+          <p>
+            I am Andie Rabino. I took up a Bachelor’s degree in Computer Science from the University of the Philippines Diliman.
+            It was originally Computer Engineering but I shifted to pursuing software engineering instead.
+          </p>
+        </div>
+        <div class="grid-33 tablet-grid-33">
+          <div class="title"><span class="title-number">2</span><br>Random facts</div>
+          <p>
+            My favorite food is spaghetti. I hated spicy food not until I lived in Korea for 10 months back in 2012.
+            I play League of Legends and my main character is Lux. I am interested in watching Korean movies and series.
+          </p>
+        </div>
+        <div class="grid-33 tablet-grid-33">
+          <div class="title"><span class="title-number">3</span><br>Career</div>
+          <p>
+            I am a person who can spend a whole day in front of the screen.
+            Designing and developing websites are things that I really love to do.
+            I am also looking forward to be a UI/UX specialist someday.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="grid-container max-10000 text-center padded-v-25">
+      <div class="title">
+        Contact
+      </div>
+      <p class="max-10000">
+        Feel free to message at rabinoandie@gmail.com
+      </p>
+    </section>
+    <section id="section-footer" class="grid-container max-10000 text-center padded-v-25">
+      <div class="meta text-thin">
+        Copyright © 2016 · Andie Rabino
+      </div>
+    </div>
+  </section>
+</body>
+</html>

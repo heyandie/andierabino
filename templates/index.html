@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<section id="section-one" class="grid-container max-10000">
+
+  <div class="grid-container">
+    <div class="grid-100">
+      <div class="grid-80 prefix-10 tablet-grid-100 mobile-grid-100">
+        <h1 class="text-white text-center"><span class="text-white">Hi. This is Andie.</span></h1>
+        <h5 class="text-thin text-center">A full stack developer who puts random posts.
+        </h5>
+        <div class="text-center grid-100 andie-image">
+          <img src="/static/images/andie.png" width=200>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="section-latest" class="grid-container max-10000 padded-v-50">
+  <!-- <div class="grid-container">
+    <div class="grid-90 prefix-5 tablet-grid-100 mobile-grid-100">
+      <h4 class="grid-100 text-center">
+        LATEST
+      </h4>
+    </div>
+    <div class="grid-90 prefix-5 tablet-grid-100 mobile-grid-100 padded-v-25">
+      {% for post in posts %}
+      <div class="grid-33 tablet-grid-50 text-center">
+        <div class="blog-content grid-100 grid-parent">
+          <div class="blog-thumbnail">
+            <div class="image" style="background-image:url('/{{post.image}}')">
+            </div>
+          </div>
+          <div class="blog-thumbnail-title">
+            <div class="blog-thumbnail-category emphasis">{{ post.category }}<br></div>
+            <a href="/article/{{post.slug}}"><b>{{post.title}}</b></a>
+          </div>
+          <div class="blog-thumbnail-content">
+            <p class="blog-thumbnail-excerpt caption">{{ post.excerpt | slice:":100"}}</p>
+            <a class="blog-thumbnail-readmore" href="/article/{{post.slug}}">[ READ MORE ]</a>
+          </div>
+          <div class="blog-thumbnail-inner">
+            <div class="meta">
+              {% load l10n %}
+              {% localize on %}
+                  {{post.posted|date:"M d, Y g:i A" }}
+              {% endlocalize %}
+            </div>
+          </div>
+        </div>
+
+      </div>
+      {% endfor %}
+    </div>
+  </div> -->
+  <div class="grid-container">
+    <div class="grid-80 prefix-10 tablet-grid-100 mobile-grid-100 padded-v-50">
+      <div class="grid-100 grid-parent">
+      {% for post in posts %}
+      <div class="grid-100 tablet-grid-100 mobile-grid-50 grid-parent padded-v-15">
+          <div class="grid-30 tablet-grid-35">
+            <div class="blog-thumbnail">
+              <div class="image" style="background-image:url('/{{post.image}}')">
+              </div>
+            </div>
+          </div>
+          <div class="grid-70 tablet-grid-65 grid-parent">
+            <div class="grid-100">
+                <div class="grid-100 grid-parent">
+                  <div class="blog-list-category emphasis category-{{ post.category|lower }}">{{ post.category }}</div>
+                  <a href="/article/{{post.slug}}"><h4>
+                    <b>{{post.title}}</b>
+                  </h4></a>
+
+                  <p class="grid-100 grid-parent">
+                    {{post.excerpt}}
+                  </p>
+                  <div class="grid-100 grid-parent text-thin meta padded-v-15">
+                    {% load l10n %}
+
+                    {% localize on %}
+                        Posted on {{post.posted|date:"M d, Y g:i A" }}
+                    {% endlocalize %}
+                  </div>
+
+              </div>
+            </div>
+
+          </div>
+      </div>
+      {% endfor %}
+      </div>
+      <div class="grid-100 divider"></div>
+    </div>
+  </div>
+
+</section>
+
+
+{% endblock %}
