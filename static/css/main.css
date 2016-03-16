@@ -94,6 +94,28 @@ a:hover {
   transition: 0.2s all linear;
 }
 
+/* ======== */
+/* Sections */
+/* ======== */
+
+.section-header {
+  display: inline-block;
+  padding: 25px 10px;
+  font-size: 1.6rem;
+  background-color: #454545;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.section-header-blue {
+  background-color: #3498db;
+}
+
+.section-header-orange {
+  background-color: #f97909;
+}
+
 #section-one {
   background-color: #3498db;
   padding: 0;
@@ -107,8 +129,7 @@ a:hover {
   overflow: hidden;
 }
 .andie-image img {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+
 }
 .blog-thumbnail {
   padding: 60% 0 0 0;
@@ -158,7 +179,7 @@ a:hover {
 }
 
 #contact {
-  background-color: #e74c3c;
+  background-color: #3498db;
   color: #fff;
 }
 
@@ -171,7 +192,7 @@ a:hover {
 }
 
 #section-footer {
-  background-color: #e74c3c;
+  background-color: #3498db;
   color: #fff;
   position: relative;
   bottom: 0;
@@ -201,9 +222,11 @@ a:hover {
 
 .header-inner > div {
   width: 50%;
+  height: 30px;
+  line-height: 30px;
 }
 
-.header-inner > div > a {
+.header-inner  div a  {
   color: #fff;
 }
 
@@ -216,9 +239,7 @@ a:hover {
 /* ==== */
 /* Post */
 /* ==== */
-.post-title {
-  max-width: 599px;
-}
+
 .post-details {
 }
 
@@ -227,7 +248,16 @@ a:hover {
   font-weight: bold;
   display: inline-block;
   font-size: 1.2rem;
-  color: #f97909;
+  color: #333;
+}
+
+.sidebar-blog {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.sidebar-thumbnail-title {
+  bottom: 3px;
 }
 
 /* ==== */
@@ -249,11 +279,38 @@ a:hover {
 /* ======== */
 
 .category-personal {
-  color: #e74c3c;
+  color: #2980b9;
 }
 
 .category-random {
-  color: #f97909;
+  color: #2980b9;
+}
+
+div.image {
+  position: relative;
+}
+
+div.image-p {
+  max-width: 599px;
+  margin-bottom: 15px;
+}
+
+div.image > .caption {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  height: 100%;
+  max-width: 599px;
+  overflow: hidden;
+}
+
+div.image > .caption > span {
+  position: absolute;
+  bottom: 20px;
+  color: #333;
+  background: #f2ca27;
+  padding: 3px 6px;
+  font-size: 1.1rem;
 }
 
 
@@ -315,7 +372,8 @@ p, .caption, .meta {
 }
 
 .emphasis {
-  font-weight: bold;
+  font-family: 'Open Sans Semibold';
+  color: #34495e;
 }
 
 .headline {
@@ -335,7 +393,7 @@ p, .caption, .meta {
 .title-number {
   display: inline-block;
   color: white;
-  background-color: #e74c3c;
+  background-color: #3498db;
   width: 28px;
   height: 28px;
   border-radius: 100%;
@@ -439,6 +497,10 @@ h4 > .title-number {
 
 .padded-right-25 {
   padding-right: 25px;
+}
+
+.padded-bottom-25 {
+  padding-bottom: 25px;
 }
 .padded-v-15 {
   padding-top: 15px;

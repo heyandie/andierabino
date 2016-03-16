@@ -10,16 +10,16 @@
 {% endblock %}
 
 {% block main %}
-
+<section class="grid-container max-10000 padded-v-25">
 <div class="grid-container">
   <div class="grid-80 prefix-10 tablet-grid-100 mobile-grid-100 grid-parent">
     <div class="grid-100 grid-parent">
       <div class="grid-100 grid-parent padded-v-50 post">
-        <div class="grid-100">
-          <div class="grid-100">
-            <div class="post-category emphasis">{{ post.category }}</div><br>
+        <div class="grid-60 prefix-20 suffix-20 tablet-grid-70 tablet-prefix-15 tablet-suffix-15 mobile-grid-90 mobile-prefix-5 mobile-suffix-5">
+          <div class="text-center grid-100">
+            <div class="post-category category-{{ post.category|lower }} emphasis">{{ post.category }}</div><br>
           </div>
-          <p class="grid-100 grid-100 meta">
+          <div class="text-center padded-v-15 grid-100 grid-100 meta">
             {% load l10n %}
 
             {% localize on %}
@@ -27,26 +27,47 @@
             {% endlocalize %}
 
 
-          </p>
+          </div>
 
           <div class="grid-100">
-            <h2 class="post-title">
+            <h2 class="text-center post-title">
               {{post.title}}
             </h2>
-            <div class="spacer"></div>
-            <p>{{post.excerpt}}</p>
+            <div class="text-center padded-v-15 emphasis">{{post.excerpt}}</div>
             {{post.body|safe}}
           </div>
-          <div class="grid-100">
+          <!-- <div class="grid-100">
             <p class="divider"></p>
             <h3 class="emphasis disqus_header">Thoughts on <span class="headline">{{post.title}}</span></h3>
             <div class="spacer"></div>
             <div id="disqus_thread"></div>
-          </div>
+          </div>-->
         </div>
       </div>
+      <div class="grid-100">
+        <div class="divider"></div>
+        <div class="grid-100 post-category padded-bottom-25">LATEST POSTS</div>
+        <div class="grid-100 grid-parent">
+
+          {% for post in posts %}
+          <div class="grid-25 tablet-grid-33 mobile-grid-50 grid-parent sidebar-blog">
+            <div class="mobile-grid-100">
+              <div class="blog-thumbnail">
+                <div class="image" style="background-image:url('/{{post.image}}')">
+                </div>
+              </div>
+            </div>
+
+            <div class="mobile-grid-100 sidebar-thumbnail-title">
+              <a href="/article/{{post.slug}}">
+                <b>{{post.title}}</b>
+              </a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
     </div>
-    <script>
+    <!-- <script>
 
     /**
     * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -67,9 +88,9 @@
     (d.head || d.body).appendChild(s);
     })();
     </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript> -->
   </div>
 </div>
-
+</section>
 
 {% endblock %}

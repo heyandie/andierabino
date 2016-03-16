@@ -24,5 +24,6 @@ def view_post(request, slug):
     return render_to_response('blog/post.html', {
         'og_tags': og_tags,
         'post': post,
-        'title': title
+        'title': title,
+        'posts': Blog.objects.exclude(id__in=(post.id,)).order_by('-posted')[:5]
     })
