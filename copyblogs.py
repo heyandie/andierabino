@@ -12,7 +12,7 @@ for item in Blog.objects.all():
 
     try:
         blog = Blog.objects.using('heyandie').get(title=item.title)
-        blog.posted = item.posted
+        blog.body = item.body
         blog.save()
     except:
         raise

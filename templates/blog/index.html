@@ -5,9 +5,9 @@
 
   <div class="grid-container">
     <div class="grid-100">
-      <div class="grid-90 prefix-5 tablet-grid-100 mobile-grid-100">
-        <h1 class="emphasis"><span class="highlight">Blog.</span></h1>
-        <h4 class="text-thin">Some reads about <span class="highlight">web design</span> and <span class="highlight">development</span> + random interests.
+      <div class="grid-80 prefix-10 tablet-grid-100 mobile-grid-100">
+        <h1 class="text-white">Blog.</h1>
+        <h4 class="text-thin text-white">Some reads about web design and <span>development</span> + random interests.
         </h4>
       </div>
     </div>
@@ -19,7 +19,7 @@
 
 
 <div class="grid-container">
-  <div class="grid-90 prefix-5 tablet-grid-100 mobile-grid-100 padded-v-50">
+  <div class="grid-80 prefix-10 tablet-grid-100 mobile-grid-100 padded-v-50">
     {% for post in posts %}
     <div class="grid-100 grid-parent padded-v-15">
         <div class="grid-35 tablet-grid-35">
@@ -31,7 +31,7 @@
         <div class="grid-65 tablet-grid-65 grid-parent">
           <div class="grid-100">
               <div class="grid-100 grid-parent">
-                <div class="blog-list-category emphasis">{{ post.category }}</div>
+                <div class="blog-list-category category-{{ post.category.split|join:'-'|lower }} emphasis">{{ post.category }}</div>
                 <a href="/article/{{post.slug}}"><h4>
                   <b>{{post.title}}</b>
                 </h4></a>

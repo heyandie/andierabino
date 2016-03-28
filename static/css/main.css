@@ -78,7 +78,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: 'Open Sans';
+  font-family: 'Sintony';
   padding: 0;
   margin: 0;
 }
@@ -95,6 +95,11 @@ body {
 a {
   text-decoration: none;
   color: #333;
+}
+
+p, .excerpt {
+  font-family: 'Sintony';
+  font-weight: 300;
 }
 
 a:hover {
@@ -289,7 +294,6 @@ a:hover {
   font-weight: bold;
   display: inline-block;
   font-size: 1.3rem;
-  color: #e67e22;
   margin-bottom: 5px;
 }
 
@@ -298,15 +302,30 @@ a:hover {
 /* ======== */
 
 .category-personal {
-  color: #2980b9;
+  color: #2980b9 !important;
 }
 
 .category-random {
-  color: #f92672;
+  color: #f92672 !important;
 }
 
 .category-web-development {
-  color: #1abc9c;
+  color: #1abc9c !important;
+}
+
+.highlight-personal {
+  color: white;
+  background-color: #2980b9 !important;
+}
+
+.highlight-random {
+  color: white;
+  background-color: #f92672 !important;
+}
+
+.highlight-web-development {
+  color: white;
+  background-color: #1abc9c !important;
 }
 
 div.image {
@@ -314,7 +333,6 @@ div.image {
 }
 
 div.image-p {
-  max-width: 599px;
   margin-bottom: 15px;
 }
 
@@ -329,6 +347,7 @@ div.image > .caption {
 
 div.image > .caption > span {
   position: absolute;
+  left: 0;
   bottom: 20px;
   color: #333;
   background: #f2ca27;
@@ -376,9 +395,9 @@ h5 {
 
 p {
   font-size: 1.4rem;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 2.6rem;
-  color: #222;
+  color: #545454;
 }
 p.instagram {
   max-width: 599px;
@@ -411,6 +430,7 @@ p, .caption, .meta {
 
 .excerpt {
   color: #888;
+  font-weight: 300;
   font-size: 1.3rem;
   line-height: 1.8rem;
   min-height: 3.6rem;
@@ -492,6 +512,14 @@ h4 > .title-number {
 
 .highlight {
   color: #00a99d;
+}
+
+.highlight-yellow {
+  color: #f1c40f;
+}
+
+.highlight-blue {
+  color: #2980b9;
 }
 
 .text-thin {
