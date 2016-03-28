@@ -178,9 +178,9 @@ a:hover {
 }
 
 .blog-thumbnail-title {
-  padding: 10px 0;
-  font-size: 1.8rem;
-  border-bottom: 1px dotted #111;
+  font-size: 1.7rem;
+  border-bottom: 1px dotted #ccc;
+  min-height: 51px;
 }
 
 .blog-thumbnail-category {
@@ -306,11 +306,15 @@ a:hover {
 }
 
 .category-random {
-  color: #f92672 !important;
+  color: #e74c3c !important;
 }
 
 .category-web-development {
-  color: #1abc9c !important;
+  color: #0aaf4c !important;
+}
+
+.highlight-color-red {
+  color: #e74c3c;
 }
 
 .highlight-personal {
@@ -320,12 +324,12 @@ a:hover {
 
 .highlight-random {
   color: white;
-  background-color: #f92672 !important;
+  background-color: #e74c3c !important;
 }
 
 .highlight-web-development {
   color: white;
-  background-color: #1abc9c !important;
+  background-color: #0aaf4c !important;
 }
 
 div.image {
@@ -353,6 +357,20 @@ div.image > .caption > span {
   background: #f2ca27;
   padding: 3px 6px;
   font-size: 1.1rem;
+}
+
+.videowrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videowrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 
@@ -571,6 +589,10 @@ h4 > .title-number {
 
 .padded-right-25 {
   padding-right: 25px;
+}
+
+.padded-top-15 {
+  padding-top: 15px;
 }
 
 .padded-bottom-25 {

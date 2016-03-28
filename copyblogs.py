@@ -8,11 +8,17 @@ import psycopg2
 
 from blog.models import Blog
 
-for item in Blog.objects.all():
+for item in Blog.objects.all().values():
+
+    # try:
+    #     blog = Blog.objects.using('heyandie').get(pk=item.id)
+    #     blog.body = item.body
+    #     blog.title = item.title
+    #     blog.save()
+    # except:
+    #     raise
 
     try:
-        blog = Blog.objects.using('heyandie').get(title=item.title)
-        blog.body = item.body
-        blog.save()
+        Blog.objects.using('heyandie').create(**item)
     except:
-        raise
+        pass

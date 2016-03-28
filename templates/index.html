@@ -19,7 +19,7 @@
 
 </section>
 
-<section id="section-latest" class="grid-container max-10000 padded-bottom-25">
+<section id="section-latest" class="grid-container max-10000">
 
   <!-- <div class="grid-container">
     <div class="grid-90 prefix-5 tablet-grid-100 mobile-grid-100">
@@ -62,7 +62,7 @@
 
       <div class="grid-100 grid-parent">
       {% for post in posts %}
-      <div class="grid-33 tablet-grid-50 mobile-grid-50 grid-parent">
+      <div class="grid-25 tablet-grid-50 mobile-grid-50 grid-parent">
           <div class="grid-100">
             <div class="blog-thumbnail">
               <a href="/article/{{post.slug}}">
@@ -75,13 +75,13 @@
                 <div class="grid-100 grid-parent blog-thumbnail-details">
                   <div class="blog-list-category category-{{ post.category.split|join:'-'|lower }}">{{ post.category }}</div>
                   <a href="/article/{{post.slug}}"><h5>
-                    <div><b>{{post.title}}</b></div>
+                    <div class="blog-thumbnail-title"><b>{{post.title}}</b></div>
                   </h5></a>
 
-                  <p class="grid-100 grid-parent excerpt">
+                  <p class="grid-100 grid-parent blog-thumbnail-excerpt excerpt">
                     {{post.excerpt}}
                   </p>
-                  <div class="grid-100 grid-parent text-thin meta padded-v-15">
+                  <div class="grid-100 grid-parent text-thin meta padded-top-15">
                     {% load l10n %}
 
                     {% localize on %}
