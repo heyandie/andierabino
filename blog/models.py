@@ -1,3 +1,5 @@
+from datetime import timedelta
+
 from django.db import models
 from django.db.models import permalink
 from django.utils import timezone
@@ -20,3 +22,7 @@ class Blog(models.Model):
     @permalink
     def get_absolute_url(self):
         return ('view_blog_post', None, {'slug': self.slug})
+
+    @property
+    def localized_posted(self):
+        return self.posted + timedelta(hours=8)

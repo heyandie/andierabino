@@ -82,6 +82,17 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'untroubledninja'
+    },
+    'heyandie' : {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME' : 'd1v53foqt02j0d',
+        'USER' : 'lwxntafhzavoyq',
+        'PASSWORD' : 'i4Jmn-oaMVmliicTM6cE_gL3pB',
+        'HOST' : 'ec2-54-83-25-238.compute-1.amazonaws.com',
+        'PORT' : '5432',
+        'TEST': {
+            'MIRROR': 'default',
+        },
     }
 }
 

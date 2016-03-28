@@ -20,6 +20,7 @@
 </section>
 
 <section id="section-latest" class="grid-container max-10000 padded-bottom-25">
+
   <!-- <div class="grid-container">
     <div class="grid-90 prefix-5 tablet-grid-100 mobile-grid-100">
       <h4 class="grid-100 text-center">
@@ -57,35 +58,34 @@
     </div>
   </div> -->
   <div class="grid-container">
-    <div class="grid-80 prefix-10 tablet-grid-100 mobile-grid-100 padded-bottom-25">
-      <div class="grid-100">
-        <div class="section-header">POSTS</div>
-      </div>
+    <div class="grid-80 prefix-10 tablet-grid-100 mobile-grid-100 padded-v-50">
+
       <div class="grid-100 grid-parent">
       {% for post in posts %}
-      <div class="grid-100 tablet-grid-100 mobile-grid-50 grid-parent padded-v-15">
-          <div class="grid-30 tablet-grid-35">
+      <div class="grid-33 tablet-grid-50 mobile-grid-50 grid-parent">
+          <div class="grid-100">
             <div class="blog-thumbnail">
-              <div class="image" style="background-image:url('/{{post.image}}')">
-              </div>
+              <a href="/article/{{post.slug}}">
+              <div class="image" style="background-image:url('/{{post.image}}')"></div>
+              </a>
             </div>
           </div>
-          <div class="grid-70 tablet-grid-65 grid-parent">
+          <div class="grid-100 padded-v-15 grid-parent">
             <div class="grid-100">
-                <div class="grid-100 grid-parent">
-                  <div class="blog-list-category emphasis category-{{ post.category|lower }}">{{ post.category }}</div>
-                  <a href="/article/{{post.slug}}"><h4>
-                    <b>{{post.title}}</b>
-                  </h4></a>
+                <div class="grid-100 grid-parent blog-thumbnail-details">
+                  <div class="blog-list-category category-{{ post.category.split|join:'-'|lower }}">{{ post.category }}</div>
+                  <a href="/article/{{post.slug}}"><h5>
+                    <div><b>{{post.title}}</b></div>
+                  </h5></a>
 
-                  <p class="grid-100 grid-parent">
+                  <p class="grid-100 grid-parent excerpt">
                     {{post.excerpt}}
                   </p>
                   <div class="grid-100 grid-parent text-thin meta padded-v-15">
                     {% load l10n %}
 
                     {% localize on %}
-                        Posted on {{post.posted|date:"M d, Y g:i A" }}
+                        <span class="text-gray">Posted on {{post.localized_posted|date:"M d, Y g:i A" }}</span>
                     {% endlocalize %}
                   </div>
 

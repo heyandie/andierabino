@@ -2,7 +2,11 @@
 {% load staticfiles %}
 <html>
 <head>
+  {% if title %}
+  <title>{{ title }}</title>
+  {% else %}
   <title>Hey Andie</title>
+  {% endif %}
   <meta charset="utf-8"></meta>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta property="fb:admins" content="andie.rabino"/>
@@ -10,6 +14,7 @@
   {% endblock %}
   <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" />
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <script src="/static/js/prism.js"></script>
 </head>
 <body>
   <header id="header" class="grid-container max-10000">

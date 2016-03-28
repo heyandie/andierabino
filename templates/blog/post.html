@@ -17,14 +17,12 @@
       <div class="grid-100 grid-parent padded-v-50 post">
         <div class="grid-60 prefix-20 suffix-20 tablet-grid-70 tablet-prefix-15 tablet-suffix-15 mobile-grid-90 mobile-prefix-5 mobile-suffix-5">
           <div class="text-center grid-100">
-            <div class="post-category category-{{ post.category|lower }} emphasis">{{ post.category }}</div><br>
+            <div class="post-category category-{{ post.category.split|join:'-'|lower }}">{{ post.category }}</div><br>
           </div>
           <div class="text-center padded-v-15 grid-100 grid-100 meta">
             {% load l10n %}
 
-            {% localize on %}
-                Posted on {{post.posted|date:"M d, Y g:i A" }}
-            {% endlocalize %}
+            <span class="text-gray">Posted on {{post.localized_posted|date:"M d, Y g:i A" }}</span>
 
 
           </div>
@@ -33,7 +31,8 @@
             <h2 class="text-center post-title">
               {{post.title}}
             </h2>
-            <div class="text-center padded-v-15 emphasis">{{post.excerpt}}</div>
+            <div class="text-center padded-v-15 excerpt">{{post.excerpt}}</div>
+            <div class="spacer"></div>
             {{post.body|safe}}
           </div>
           <!-- <div class="grid-100">
