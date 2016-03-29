@@ -1,5 +1,6 @@
 @import 'unsemantic.css';
 @import 'prism.css';
+@import 'font-awesome.css';
 
 @font-face {
     font-family: 'Open Sans';
@@ -99,7 +100,7 @@ a {
 
 p, .excerpt {
   font-weight: 300;
-  color: #555;
+  color: #444;
   font-size: 1.3rem;
 }
 
@@ -115,7 +116,7 @@ a:hover {
 .section-header {
   border-top: 1px dotted #3498db;
   border-bottom: 1px dotted #3498db;
-  color: #3498db;
+  color: #222;
 }
 
 .section-header-blue {
@@ -139,16 +140,14 @@ a:hover {
   overflow: hidden;
 }
 
-.blog-card {
-  border: 1px solid #ddd;
-}
 .blog-thumbnail {
   padding: 60% 0 0 0;
   position: relative;
-  overflow: hidden;
+  margin-bottom: 10px;
 }
 .blog-thumbnail a {
   top: 0;
+  left: 0;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -164,9 +163,8 @@ a:hover {
   width: 100%;
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
+  z-index: 1;
 }
 
 
@@ -192,6 +190,20 @@ a:hover {
   overflow: hidden;
   min-height: 52px;
   max-height: 52px;
+
+
+}
+
+@media all and (max-width: 767px) {
+  .blog-thumbnail-excerpt {
+    width: 100%;
+    min-height: 18px;
+    max-height: 18px !important;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 #about {
@@ -271,7 +283,56 @@ a:hover {
   font-size: 1.2rem;
   color: #333;
 }
+#post-body {
+  position: relative;
+}
+#post-share-buttons {
+  position: absolute;
+  transform: translateX(-130%);
+  transition: 0.3s linear all;
+}
+#post-share-buttons.fixed {
+  top: 60px;
+  position: fixed;
+}
+#post-share-buttons a {
+  display: block;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+}
+#post-share-buttons a span {
+  font-family: 'Sintony';
+  font-size: 1.6rem;
+  font-weight: bold;
+  display: none;
+}
 
+#post-share-buttons a.fa-facebook {
+  background-color: #3b5999;
+}
+#post-share-buttons a.fa-twitter {
+  background-color: #55acee;
+}
+@media all and (max-width: 767px) {
+  #post-share-buttons {
+    position: relative;
+    left: 0;
+    transform: translateX(0);
+  }
+  #post-share-buttons a {
+    display: inline-block;
+    width: auto;
+  }
+  #post-share-buttons a span {
+    display: inline;
+  }
+}
 .sidebar-blog {
   position: relative;
   margin-bottom: 25px;
@@ -291,6 +352,7 @@ a:hover {
   font-weight: bold;
   display: inline-block;
   font-size: 1.3rem;
+  line-height: 1.3rem;
   margin-bottom: 5px;
 }
 
@@ -404,6 +466,7 @@ h4 {
 
 h5 {
   font-size: 1.7rem;
+  line-height: 2rem;
   font-weight: 400;
   margin: 0;
 }
@@ -419,6 +482,52 @@ p, .caption, .meta {
 
 }
 
+#blog-cards {
+  /* Prevent vertical gaps */
+  -webkit-column-count: 4;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    4;
+  -moz-column-gap:      0px;
+  column-count:         4;
+  column-gap:           0px;
+}
+
+.blog-card {
+  width: 100% !important;
+  height: auto !important;
+  break-inside: avoid-column;
+  float: none;
+  -webkit-column-break-inside: avoid;
+}
+
+@media (max-width: 1200px) {
+  #blog-cards {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #blog-cards {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 767px) {
+  #blog-cards {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
+@media (max-width: 400px) {
+  #blog-cards {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
 
 .blog-content {
   padding: 20px;
@@ -445,7 +554,6 @@ p, .caption, .meta {
   font-weight: 300;
   font-size: 1.3rem;
   line-height: 1.8rem;
-  min-height: 3.6rem;
 }
 
 .headline {
@@ -500,7 +608,7 @@ h4 > .title-number {
 }
 
 .text-gray {
-  color: #888;
+  color: #9a9a9a;
 }
 
 .truncate {
@@ -558,7 +666,7 @@ h4 > .title-number {
 }
 
 #disqus_thread, .disqus_header{
-  max-width: 599px;
+
 }
 
 

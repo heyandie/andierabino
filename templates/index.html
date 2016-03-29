@@ -20,57 +20,20 @@
 </section>
 
 <section id="section-latest" class="grid-container max-10000">
-
-  <!-- <div class="grid-container">
-    <div class="grid-90 prefix-5 tablet-grid-100 mobile-grid-100">
-      <h4 class="grid-100 text-center">
-        LATEST
-      </h4>
-    </div>
-    <div class="grid-90 prefix-5 tablet-grid-100 mobile-grid-100 padded-v-25">
-      {% for post in posts %}
-      <div class="grid-33 tablet-grid-50 text-center">
-        <div class="blog-content grid-100 grid-parent">
-          <div class="blog-thumbnail">
-            <div class="image" style="background-image:url('/{{post.image}}')">
-            </div>
-          </div>
-          <div class="blog-thumbnail-title">
-            <div class="blog-thumbnail-category emphasis">{{ post.category }}<br></div>
-            <a href="/article/{{post.slug}}"><b>{{post.title}}</b></a>
-          </div>
-          <div class="blog-thumbnail-content">
-            <p class="blog-thumbnail-excerpt caption">{{ post.excerpt | slice:":100"}}</p>
-            <a class="blog-thumbnail-readmore" href="/article/{{post.slug}}">[ READ MORE ]</a>
-          </div>
-          <div class="blog-thumbnail-inner">
-            <div class="meta">
-              {% load l10n %}
-              {% localize on %}
-                  {{post.posted|date:"M d, Y g:i A" }}
-              {% endlocalize %}
-            </div>
-          </div>
-        </div>
-
-      </div>
-      {% endfor %}
-    </div>
-  </div> -->
   <div class="grid-container">
     <div class="grid-80 prefix-10 tablet-grid-100 mobile-grid-100 padded-v-50">
 
-      <div class="grid-100 grid-parent">
+      <div id="blog-cards" class="grid-100 grid-parent">
       {% for post in posts %}
-      <div class="grid-25 tablet-grid-50 mobile-grid-100 grid-parent">
-          <div class="grid-100">
+      <div class="blog-card grid-25 tablet-grid-50 mobile-grid-100 grid-parent">
+          <div class="grid-100 mobile-grid-40">
             <div class="blog-thumbnail">
               <a href="/article/{{post.slug}}">
               <div class="image" style="background-image:url('/{{post.image}}')"></div>
               </a>
             </div>
           </div>
-          <div class="grid-100 padded-v-15 grid-parent">
+          <div class="grid-100 mobile-grid-60 grid-parent">
             <div class="grid-100">
                 <div class="grid-100 grid-parent blog-thumbnail-details">
                   <div class="blog-list-category category-{{ post.category.split|join:'-'|lower }}">{{ post.category }}</div>
@@ -81,19 +44,21 @@
                   <p class="grid-100 grid-parent blog-thumbnail-excerpt excerpt">
                     {{post.excerpt}}
                   </p>
-                  <div class="divider"></div>
-                  <div class="grid-100 grid-parent text-thin meta">
+
+                  <div class="grid-100 grid-parent text-thin">
                     {% load l10n %}
 
-                    <!-- {% localize on %}
-                        <span class="text-gray">Posted on {{post.localized_posted|date:"M d, Y g:i A" }}</span>
-                    {% endlocalize %} -->
+                    {% localize on %}
+                        <span class="text-gray meta">Posted on {{post.localized_posted|date:"M d, Y g:i A" }}</span>
+                    {% endlocalize %}
+
                   </div>
 
               </div>
             </div>
-
           </div>
+
+          <div class="grid-100 mobile-grid-100"><div class="divider"></div></div>
       </div>
       {% endfor %}
       </div>
