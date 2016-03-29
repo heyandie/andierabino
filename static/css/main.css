@@ -298,13 +298,13 @@ a:hover {
 #post-share-buttons a {
   display: block;
   height: 25px;
-  width: 25px;
   line-height: 25px;
   font-size: 2rem;
   text-align: center;
   color: #fff;
-  padding: 5px;
+  padding: 5px 15px;
   cursor: pointer;
+  border-radius: 3px;
 }
 #post-share-buttons a span {
   font-family: 'Sintony';
