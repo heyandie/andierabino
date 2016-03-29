@@ -19,9 +19,9 @@ class Blog(models.Model):
     def __str__(self):
         return '%s' % self.title
 
-    @permalink
-    def get_absolute_url(self):
-        return ('view_blog_post', None, {'slug': self.slug})
+    @property
+    def url(self):
+        return 'heyandie.herokuapp.com/article/'+self.slug
 
     @property
     def localized_posted(self):
