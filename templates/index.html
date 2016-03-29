@@ -75,13 +75,14 @@
                 <div class="grid-100 grid-parent blog-thumbnail-details">
                   <div class="blog-list-category category-{{ post.category.split|join:'-'|lower }}">{{ post.category }}</div>
                   <a href="/article/{{post.slug}}"><h5>
-                    <div class="blog-thumbnail-title"><b>{{post.title}}</b></div>
+                    <b>{{post.title}}</b>
                   </h5></a>
 
                   <p class="grid-100 grid-parent blog-thumbnail-excerpt excerpt">
                     {{post.excerpt}}
                   </p>
-                  <div class="grid-100 grid-parent text-thin meta padded-top-15">
+                  <div class="divider"></div>
+                  <div class="grid-100 grid-parent text-thin meta">
                     {% load l10n %}
 
                     <!-- {% localize on %}

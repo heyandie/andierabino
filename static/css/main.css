@@ -98,8 +98,9 @@ a {
 }
 
 p, .excerpt {
-  font-family: 'Sintony';
+  font-family: 'Noto Serif';
   font-weight: 300;
+  color: #555;
 }
 
 a:hover {
@@ -112,13 +113,9 @@ a:hover {
 /* ======== */
 
 .section-header {
-  display: inline-block;
-  padding: 25px 10px;
-  font-size: 1.6rem;
-  background-color: #454545;
-  color: #fff;
-  font-weight: bold;
-  margin-bottom: 25px;
+  border-top: 1px dotted #3498db;
+  border-bottom: 1px dotted #3498db;
+  color: #3498db;
 }
 
 .section-header-blue {
@@ -401,7 +398,7 @@ h3 {
 
 h4 {
   font-size: 2.4rem;
-  font-weight: 400;
+  font-weight: normal;
   margin: 0;
 }
 
@@ -415,7 +412,6 @@ p {
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 2.6rem;
-  color: #545454;
 }
 p.instagram {
   max-width: 599px;
@@ -442,8 +438,7 @@ p, .caption, .meta {
 }
 
 .emphasis {
-  font-family: 'Open Sans Semibold';
-  color: #34495e;
+  font-weight: bold;
 }
 
 .excerpt {
