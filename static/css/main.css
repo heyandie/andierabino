@@ -84,7 +84,7 @@ html {
   margin: 0;
 }
 body {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: normal;
   padding: 0;
   margin: 0;
@@ -140,7 +140,7 @@ a:hover {
   color: #fff !important;
 }
 .andie-image {
-  max-height: 200px;
+  max-height: 180px;
   margin-top: 30px;
   overflow: hidden;
 }
@@ -272,6 +272,15 @@ a:hover {
   font-size: 2.2rem;
 }
 
+#main-nav a {
+  padding: 0 8px;
+}
+#main-nav a.fa {
+  font-size: 1.8rem;
+}
+#main-nav a:last-child {
+  padding-right: 0;
+}
 
 /* ==== */
 /* Post */
@@ -669,6 +678,19 @@ h4 > .title-number {
   height: 1px;
   margin-top: 25px;
   margin-bottom: 25px;
+}
+
+.divider-random {
+  opacity: 0.55;
+  border-color: #e74c3c;
+}
+.divider-personal {
+  opacity: 0.55;
+  border-color: #3498db;
+}
+.divider-web-development {
+  opacity: 0.55;
+  border-color: #0aaf4c;
 }
 
 #disqus_thread, .disqus_header{

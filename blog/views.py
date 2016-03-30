@@ -25,5 +25,5 @@ def view_post(request, slug):
         'og_tags': og_tags,
         'post': post,
         'title': title,
-        'posts': Blog.objects.exclude(id__in=(post.id,)).order_by('-posted')[:5]
+        'posts': Blog.objects.exclude(id__in=(post.id,)).order_by('-posted')[:3]
     })

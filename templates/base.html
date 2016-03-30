@@ -15,6 +15,8 @@
   <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" />
   <link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
+  <link rel="icon" type="image/jpg" href="{% static 'app/icons/favicon-32-by-32.jpg' %}" sizes="32x32">
+  <link rel="icon" type="image/jpg" href="{% static 'app/icons/favicon.jpg' %}" sizes="192x192">
   <script src="/static/js/prism.js"></script>
 
   <!-- Google Analytics -->
@@ -48,9 +50,11 @@
           <div>
             <a class="brand-logo" href="/">heyandie</a>
           </div>
-          <div class="text-right">
-            <a href="#about">ABOUT</a>&nbsp;&nbsp;
+          <div id="main-nav" class="text-right">
+            <a href="#about">ABOUT</a>
             <a href="#contact">CONTACT</a>
+            <a href="//instagram.com/andiedote" target="=_blank" class="fa fa-instagram"></a>
+            <a href="//github.com/heyandie" target="=_blank" class="fa fa-github"></a>
           </div>
         </div>
       </div>
@@ -92,15 +96,19 @@
       </div>
     </div>
   </section>
-  <section id="contact" class="grid-container max-10000 text-center padded-v-25">
+  <section id="contact" class="grid-container max-10000 text-center padded-v-15">
     <div class="title">
       Contact
     </div>
-    <p class="max-10000">
+    <div class="max-10000 padded-top-15">
       Feel free to message at rabinoandie@gmail.com
-    </p>
+    </div>
   </section>
-  <section id="section-footer" class="grid-container max-10000 text-center padded-v-25">
+  <section id="section-footer" class="grid-container max-10000 text-center padded-bottom-25">
+    <div class="padded-v-15 headline">
+      <a href="//instagram.com/andiedote" target="=_blank" class="text-white fa fa-instagram"></a>&nbsp;
+      <a href="//github.com/heyandie" target="=_blank" class="text-white fa fa-github"></a>
+    </div>
     <div class="meta text-thin">
       Copyright © 2016 · Andie Rabino
     </div>

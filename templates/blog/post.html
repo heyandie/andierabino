@@ -52,7 +52,7 @@
               {{post.title}}
             </h2>
             <div class="padded-v-15 excerpt">{{post.excerpt}}</div>
-            <div class="divider"></div>
+            <div class="divider divider-{{ post.category.split|join:'-'|lower }}"></div>
           </div>
           <div id="post-body">
             <div id="post-share-buttons">
@@ -62,7 +62,7 @@
             {{post.body|safe}}
           </div>
           <div class="grid-100 grid-parent">
-            <p class="divider"></p>
+            <p class="divider divider-{{ post.category.split|join:'-'|lower }}"></p>
             <h3 class="emphasis disqus_header">Thoughts on <span style="font-weight:normal">{{post.title}}</span></h3>
             <div class="spacer"></div>
             <div id="disqus_thread"></div>
@@ -70,12 +70,13 @@
         </div>
       </div>
       <div class="grid-100">
-        <div class="divider"></div>
-        <div class="grid-100 post-category padded-bottom-25">LATEST POSTS</div>
+
+        <div class="grid-100 post-category padded-bottom-25">
+          <div class="divider"></div>LATEST POSTS</div>
         <div class="grid-100 grid-parent">
 
           {% for post in posts %}
-          <div class="grid-25 tablet-grid-33 mobile-grid-50 grid-parent sidebar-blog">
+          <div class="grid-33 tablet-grid-33 mobile-grid-100 grid-parent sidebar-blog">
             <div class="mobile-grid-100">
               <div class="blog-thumbnail">
                 <div class="image" style="background-image:url('/{{post.image}}')">
