@@ -9,6 +9,26 @@
   <meta property="title" content="{{title}} | Andie Rabino" />
 {% endblock %}
 
+{% block immediate_scripts %}
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '224598357874885',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+{% endblock %}
+
 {% block main %}
 <section class="grid-container max-10000 padded-v-25">
 <div class="grid-container">
@@ -36,8 +56,8 @@
           </div>
           <div id="post-body">
             <div id="post-share-buttons">
-              <a class="fa fa-facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{post.url}}"> <span>Share</span></a>
-              <a class="fa fa-twitter" target="_blank" href="https://twitter.com/intent/tweet/?url={{post.url}}"> <span>Tweet</span></a>
+              <a class="fa fa-facebook" id="share"> <span>Share</span></a>
+              <a class="fa fa-twitter" id="tweet"> <span>Tweet</span></a>
             </div>
             {{post.body|safe}}
           </div>
@@ -72,6 +92,24 @@
           {% endfor %}
         </div>
     </div>
+
+    <script>
+    var posturl = "{{post.url}}";
+    window.onload = function () {
+      var el = document.getElementById('share');
+      el.onclick = function (e) {
+        FB.ui(
+         {
+          method: 'share',
+          href: posturl
+        }, function(response){
+          if (ga) {
+            ga('send', 'event', 'Social', 'share', 'Facebook');
+          }
+        });
+      }
+    }
+    </script>
     <script>
 
     /**
