@@ -60,12 +60,10 @@
           <div id="post-body">
             <div id="post-share-buttons">
 
-              <a class="fa fa-facebook" id="share"> <span>
-                {% if share_count > 0 %}{{share_count}} Shares
-                {% else %}
-                Share
-                {% endif %}
-              </span></a>
+              <a class="fa fa-facebook" id="share"> <span>Share</span></a>
+              {% if share_count > 0 %}
+              <div class="share-count">{{share_count}}</div>
+              {% endif %}
               <a class="fa fa-twitter" id="tweet"> <span>Tweet</span></a>
 
             </div>

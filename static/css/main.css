@@ -370,11 +370,25 @@ a:hover {
   font-size: 2rem;
   line-height: 2.5rem;
   font-weight: bold;
-  background-color: #aaa;
-  color: #fff;
+  background-color: #f2ca27;
+  color: #111;
   padding: 3px 5px 3px 5px;
   border-radius: 3px;
+  margin-left: 5px;
   display: inline-block;
+  position: relative;
+}
+.share-count::after{
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  margin-top: -5px;
+  left: -16px;
+  border-top: 5px solid transparent;
+  border-left: 8px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 8px solid #f2ca27;
 }
 #post-share-buttons a span {
   font-family: 'Sintony', Helvetica, sans-serif;
