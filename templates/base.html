@@ -10,6 +10,9 @@
   <meta charset="utf-8"></meta>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta property="fb:admins" content="andie.rabino"/>
+  {% if not og_tags %}
+  <meta property="og:image" content="http://www.heyandie.com/static/images/site-cover.jpg">
+  {% endif %}
   {% block og_tags %}
   {% endblock %}
   <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" />
