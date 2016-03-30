@@ -96,15 +96,27 @@
     <script>
     var posturl = "{{post.url}}";
     window.onload = function () {
-      var el = document.getElementById('share');
-      el.onclick = function (e) {
+      var shareButton = document.getElementById('share');
+      var tweetButton = document.getElementById('tweet');
+      shareButton.onclick = function (e) {
+        ga('send', 'event', 'Social', 'share', 'Facebook');
         FB.ui(
          {
           method: 'share',
           href: posturl
         }, function(response){
-            ga('send', 'event', 'Social', 'share', 'Facebook');
+
         });
+      }
+
+      tweetButton.onclick = function (e) {
+        var self = this;
+        var link = "https://twitter.com/intent/tweet?url="+posturl;
+        var x = screen.width/2 - 700/2;
+        var y = screen.height/2 - 485/2;
+        ga('send', 'event', 'Social', 'share', 'Twitter');
+        window.open(encodeURI(link), "Roadmob Twitter Share", 'height=485,width=700,left='+x+',top='+y);
+        e.stopPropagation();
       }
     }
     </script>
