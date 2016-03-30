@@ -336,7 +336,7 @@ a:hover {
 }
 
 .post-category {
-  font-family: 'Brandon';
+  font-family: 'Brandon', Helvetica, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   display: inline-block;
@@ -362,12 +362,22 @@ a:hover {
   font-size: 2rem;
   text-align: center;
   color: #fff;
-  padding: 5px 15px;
+  padding: 3px 15px;
   cursor: pointer;
   border-radius: 3px;
 }
+.share-count {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: bold;
+  background-color: #aaa;
+  color: #fff;
+  padding: 3px 5px 3px 5px;
+  border-radius: 3px;
+  display: inline-block;
+}
 #post-share-buttons a span {
-  font-family: 'Sintony';
+  font-family: 'Sintony', Helvetica, sans-serif;
   font-size: 1.6rem;
   font-weight: bold;
   display: none;
@@ -407,7 +417,7 @@ a:hover {
 /* ==== */
 
 .blog-list-category {
-  font-family: 'Brandon';
+  font-family: 'Brandon', Helvetica, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   display: inline-block;
