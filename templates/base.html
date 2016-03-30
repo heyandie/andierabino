@@ -13,10 +13,7 @@
   {% block og_tags %}
   {% endblock %}
   <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" />
-  <link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
-  <link rel="icon" type="image/jpg" href="{% static 'app/icons/favicon-32-by-32.jpg' %}" sizes="32x32">
-  <link rel="icon" type="image/jpg" href="{% static 'app/icons/favicon.jpg' %}" sizes="192x192">
+  <link rel="icon" type="image/jpeg" href="{% static 'icons/favicon.jpg' %}">
   <script src="/static/js/prism.js"></script>
 
   <!-- Google Analytics -->
@@ -43,18 +40,20 @@
   {% block immediate_scripts %}
 
   {% endblock %}
-  <header id="header" class="grid-container max-10000">
+  <header id="header" class="grid-container max-10000 {{header_class}}">
     <div class="grid-container">
       <div class="grid-100">
         <div class="header-inner grid-80 prefix-10 tablet-grid-100 mobile-grid-100">
-          <div>
-            <a class="brand-logo" href="/">heyandie</a>
-          </div>
-          <div id="main-nav" class="text-right">
-            <a href="#about">ABOUT</a>
-            <a href="#contact">CONTACT</a>
-            <a href="//instagram.com/andiedote" target="=_blank" class="fa fa-instagram"></a>
-            <a href="//github.com/heyandie" target="=_blank" class="fa fa-github"></a>
+          <div class="grid-100 grid-parent">
+            <div>
+              <a class="brand-logo" href="/">heyandie</a>
+            </div>
+            <div id="main-nav" class="text-right">
+              <a href="#about">ABOUT</a>
+              <a href="#contact">CONTACT</a>
+              <a href="//instagram.com/andiedote" target="=_blank" class="fa fa-instagram"></a>
+              <a href="//github.com/heyandie" target="=_blank" class="fa fa-github"></a>
+            </div>
           </div>
         </div>
       </div>
