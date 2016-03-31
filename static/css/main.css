@@ -445,11 +445,11 @@ a:hover {
 /* ======== */
 
 .category-personal {
-  color: #2980b9 !important;
+  color: #f1c40f !important;
 }
 
 .category-random {
-  color: #e74c3c !important;
+  color: #ce472a !important;
 }
 
 .category-web-development {
@@ -467,7 +467,7 @@ a:hover {
 
 .highlight-random {
   color: white;
-  background-color: #e74c3c !important;
+  background-color: #ce472a !important;
 }
 
 .highlight-web-development {
@@ -754,15 +754,15 @@ h4 > .title-number {
 }
 
 .divider-random {
-  opacity: 0.55;
+  opacity: 0.75;
   border-color: #e74c3c;
 }
 .divider-personal {
-  opacity: 0.55;
-  border-color: #3498db;
+  opacity: 0.75;
+  border-color: #f1c40f;
 }
 .divider-web-development {
-  opacity: 0.55;
+  opacity: 0.75;
   border-color: #0aaf4c;
 }
 
