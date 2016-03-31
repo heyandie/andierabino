@@ -304,25 +304,29 @@ a:hover {
   }
 
 .header-inner > div > div {
-  width: 50%;
   height: 30px;
   line-height: 30px;
 }
-
+.header-inner > div > div:first-child {
+  width: 20%;
+}
+.header-inner > div > div:nth-child(2) {
+  width: 80%;
+}
 .header-inner  div a  {
   color: #fff;
 }
 
 .brand-logo{
   font-family: 'Brandon', Helvetica, sans-serif;
-  font-size: 2.2rem;
+  font-size: 1.9rem;
 }
 
 #main-nav a {
-  padding: 0 8px;
+  padding: 0 6px;
 }
 #main-nav a.fa {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 #main-nav a:last-child {
   padding-right: 0;
@@ -445,7 +449,7 @@ a:hover {
 /* ======== */
 
 .category-personal {
-  color: #f1c40f !important;
+  color: #eec213 !important;
 }
 
 .category-random {
@@ -759,7 +763,7 @@ h4 > .title-number {
 }
 .divider-personal {
   opacity: 0.75;
-  border-color: #f1c40f;
+  border-color: #eec213;
 }
 .divider-web-development {
   opacity: 0.75;
