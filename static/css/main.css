@@ -224,10 +224,6 @@ a:hover {
 
 .blog-thumbnail-excerpt {
   overflow: hidden;
-  min-height: 52px;
-  max-height: 52px;
-
-
 }
 
 @media all and (max-width: 767px) {
