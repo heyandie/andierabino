@@ -219,10 +219,13 @@ a:hover {
   text-transform: uppercase;
   font-size: 1.2rem;
   color: #f97909;
+
 }
 
 .blog-thumbnail-excerpt {
   overflow: hidden;
+  min-height: 36px;
+  height: 36px;
 }
 
 @media all and (max-width: 767px) {
@@ -312,8 +315,8 @@ a:hover {
 }
 
 .brand-logo{
-  font-family: 'Brandon', Helvetica, sans-serif;
-  font-size: 1.9rem;
+  font-family: 'Just Me Again Down Here', Helvetica, sans-serif;
+  font-size: 3rem;
 }
 
 #main-nav a {
@@ -691,6 +694,9 @@ h4 > .title-number {
 
 .text-white {
   color: #fff;
+}
+a.text-white:hover {
+  color: #eee;
 }
 .text-blue {
   color: #3498db;
