@@ -128,11 +128,10 @@ body {
 a {
   text-decoration: none;
   color: #333;
-  word-break: break-all;
 }
 
-a h5 {
-  word-break: normal;
+a.url-text {
+  word-break: break-all;
 }
 
 p, .excerpt {
