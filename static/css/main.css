@@ -304,11 +304,9 @@ a:hover {
   height: 30px;
   line-height: 30px;
 }
-.header-inner > div > div:first-child {
-  width: 20%;
-}
+
 .header-inner > div > div:nth-child(2) {
-  width: 80%;
+  text-align: right;
 }
 .header-inner  div a  {
   color: #fff;
