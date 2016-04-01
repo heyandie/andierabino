@@ -116,7 +116,7 @@ html {
   margin: 0;
 }
 body {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: normal;
   padding: 0;
   margin: 0;
@@ -138,7 +138,6 @@ a h5 {
 p, .excerpt {
   font-weight: 300;
   color: #444;
-  font-size: 1.3rem;
 }
 
 a:hover {
@@ -563,6 +562,8 @@ h5 {
 p {
   font-weight: 300;
   line-height: 2.6rem;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 p.instagram {
   max-width: 599px;
@@ -570,23 +571,24 @@ p.instagram {
 p, .caption, .meta {
 
 }
+a {
+  color: #3498db;
+}
+.blog-thumbnail-details a {
+  color: #333;
+}
 
 #blog-cards {
-  /* Prevent vertical gaps */
-  -webkit-column-count: 4;
-  -webkit-column-gap:   0px;
-  -moz-column-count:    4;
-  -moz-column-gap:      0px;
-  column-count:         4;
-  column-gap:           0px;
+  position: relative;
 }
 
 .blog-card {
-  width: 100% !important;
-  height: auto !important;
-  break-inside: avoid-column;
-  float: none;
-  -webkit-column-break-inside: avoid;
+  display: inline-block;
+  float: left;
+}
+
+.blog-card:nth-child(5) {
+    clear: both;
 }
 
 @media (max-width: 1200px) {
