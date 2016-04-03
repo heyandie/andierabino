@@ -298,17 +298,16 @@ a:hover {
   -webkit-flex: 1;
     -ms-flex: 1;
         flex: 1;
+  justify-content: space-between;
   }
 
 .header-inner > div > div {
   height: 30px;
   line-height: 30px;
 }
-.header-inner > div > div:first-child {
-  width: 20%;
-}
+
 .header-inner > div > div:nth-child(2) {
-  width: 80%;
+  text-align: right;
 }
 .header-inner  div a  {
   color: #fff;
