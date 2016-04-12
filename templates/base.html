@@ -22,7 +22,6 @@
   <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" />
   <link rel="icon" type="image/jpg" href="{% static 'icons/favicon.jpg' %}">
   <link rel="author" href="https://plus.google.com/100270567345430558884">
-  <link href='https://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here' rel='stylesheet' type='text/css'>
   <script src="/static/js/prism.js"></script>
 
   <!-- Google Analytics -->
@@ -41,11 +40,40 @@
      console.log("Done");
   }
 
+  var domIsReady = (function(domIsReady) {
+     var isBrowserIeOrNot = function() {
+        return (!document.attachEvent || typeof document.attachEvent === "undefined" ? 'not-ie' : 'ie');
+     }
+
+     domIsReady = function(callback) {
+        if(callback && typeof callback === 'function'){
+           if(isBrowserIeOrNot() !== 'ie') {
+              document.addEventListener("DOMContentLoaded", function() {
+                 return callback();
+              });
+           } else {
+              document.attachEvent("onreadystatechange", function() {
+                 if(document.readyState === "complete") {
+                    return callback();
+                 }
+              });
+           }
+        } else {
+           console.error('The callback is not a function!');
+        }
+     }
+
+     return domIsReady;
+  })(domIsReady || {});
+
+
   </script>
+
+
   <!-- End Google Analytics -->
 
 </head>
-<body>
+<body class="{% block body_class %}{% endblock %}">
   {% block immediate_scripts %}
 
   {% endblock %}
@@ -58,8 +86,9 @@
               <a class="brand-logo" href="/">Hey Andie</a>
             </div>
             <div id="main-nav" class="text-right">
-              <a href="#about">ABOUT</a>
-              <a href="#contact">CONTACT</a>
+              <a href="/about">About</a>
+              <a href="/work">Work</a>
+              <a href="#contact">Contact</a>
               <a href="//facebook.com/andie.rabino" target="=_blank" class="fa fa-facebook-square"></a>
               <a href="//instagram.com/andiedote" target="=_blank" class="fa fa-instagram"></a>
               <a href="//github.com/heyandie" target="=_blank" class="fa fa-github"></a>
@@ -72,57 +101,20 @@
   {% block main %}
 
   {% endblock %}
-  <section id="about" class="grid-container max-10000 padded-bottom-25">
-    <div class="grid-container">
-      <div class="grid-80 prefix-10 tablet-grid-100 mobile-grid-100">
 
-        <div class="grid-100 text-center padded-v-50">
-
-          <h3 class="emphasis section-header padded-v-15">What's Up Yo?</h3>
-        </div>
-
-        <div class="grid-33 tablet-grid-33">
-          <div class="title"><span class="title-number">1</span> Hey</div>
-          <p>
-            I am Andie Rabino. I took up a Bachelor’s degree in Computer Science from the University of the Philippines Diliman.
-            It was originally Computer Engineering but I shifted my path into software engineering instead.
-          </p>
-        </div>
-        <div class="grid-33 tablet-grid-33">
-          <div class="title"><span class="title-number">2</span> Career</div>
-          <p>
-            I am a person who can spend a whole day in front of the screen.
-            Designing and developing websites are things that I enjoy doing.
-            I am also looking forward to be a UI/UX specialist someday.
-          </p>
-        </div>
-        <div class="grid-33 tablet-grid-33">
-          <div class="title"><span class="title-number">3</span> Random</div>
-          <p>
-            My favorite food is spaghetti. I hated spicy food not until I lived in Korea for 10 months back in 2012.
-            I play League of Legends and my main character is Lux. I am interested in watching Korean movies and series.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <section id="contact" class="grid-container max-10000 text-center padded-v-15">
-
-    <div class="title">
-      Contact
+  <section id="section-footer" class="grid-container max-10000 text-center padded-v-50">
+    <div id="contact" class="title">
+      Let's Get In Touch
     </div>
     <div class="max-10000 padded-top-15">
-      Feel free to message at rabinoandie@gmail.com
+      Send a message to rabinoandie@gmail.com
     </div>
-  </section>
-  <section id="section-footer" class="grid-container max-10000 text-center padded-bottom-25">
-    <div class="padded-v-15 headline">
+    <div class="padded-v-15 headline padded-top-50">
       <a href="//facebook.com/andie.rabino" target="=_blank" class="text-white fa fa-facebook-square"></a>&nbsp;
       <a href="//instagram.com/andiedote" target="=_blank" class="text-white fa fa-instagram"></a>&nbsp;
       <a href="//github.com/heyandie" target="=_blank" class="text-white fa fa-github"></a>
     </div>
-    <div class="text-thin">
+    <div class="text-thin meta">
       Copyright © 2016 · Andie Rabino
     </div>
   </section>

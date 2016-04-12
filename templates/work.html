@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+
+{% block immediate_scripts %}
+<script src="/static/js/wookmark.js"></script>
+<script src="/static/js/belazy.js"></script>
+{% endblock %}
+
+{% block main %}
+
+<div id="works" class="grid-container max-10000">
+<div class="grid-container">
+  <div class="grid-80 prefix-10 tablet-grid-100 mobile-grid-100 padded-v-100">
+    <div class="grid-100 text-center padded-v-25"><h2 class="text-white"><i class="fa fa-music"></i> WORK WORK WORK WORK <i class="fa fa-music"></i></h2></div>
+    <div class="grid-100 grid-parent padded-v-25">
+
+      <div id="blog-cards" class="grid-100 grid-parent">
+
+        <div class="blog-card">
+          <div class="grid-100">
+            <div class="work-thumbnail">
+              <a href="/work/roadmob">
+              <img class="b-lazy" src="" data-src-small="/static/images/work/roadmob-screenshot.png" data-src="/static/images/work/roadmob-screenshot.png"></img>
+              </a>
+
+            </div>
+          </div>
+          <div class="grid-100 grid-parent">
+            <div class="grid-100">
+              <div class="grid-100 grid-parent work-thumbnail-details text-center padded-v-25">
+                <a href="/work/roadmob"><h5>
+                  <b class="work-thumbnail-title">Roadmob</b>
+                </h5></a>
+                <a>
+                <span class="work-thumbnail-type">Web Application</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="blog-card">
+          <div class="grid-100">
+            <div class="work-thumbnail image-100">
+              <a href="/work/resume-manager">
+              <img class="b-lazy" src="" data-src-small="/static/images/work/resume-manager-screenshot.png" data-src="/static/images/work/resume-manager-screenshot.png"></img>
+              </a>
+
+            </div>
+          </div>
+          <div class="grid-100 grid-parent">
+            <div class="grid-100">
+              <div class="grid-100 grid-parent work-thumbnail-details text-center padded-v-25">
+                <a href="/work/resume-manager"><h5>
+                  <b class="work-thumbnail-title">RESUME MANAGER</b>
+                </h5></a>
+                <a>
+                <span class="work-thumbnail-type">Web Application</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+  <div class="grid-80 prefix-10 tablet-grid-100 mobile-grid-100 divider"></div>
+</div>
+</div>
+<script type="text/javascript">
+  (function(document, window, domIsReady, undefined) {
+     domIsReady(function() {
+        var container = '#blog-cards';
+        new Wookmark(container, {
+          align: 'center',
+          offset: 0,
+          outerOffset: 0,
+          autoResize: true, // This will auto-update the layout when the browser window is resized.
+          itemWidth: function () {
+            // Return a maximum width depending on the viewport
+            var windowWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+            var collectionWidth = document.getElementById('blog-cards').offsetWidth;
+            if (windowWidth > 800) {
+              return 0.30 * collectionWidth;
+            } else if (windowWidth <= 420) {
+              return collectionWidth;
+            } else {
+              return 0.5 * collectionWidth;
+            }
+          },
+          flexibleWidth: function () {
+            // Return a maximum width depending on the viewport
+            return '100%';
+          },
+          container: document.getElementById('blog-cards'),
+          resizeDelay: 50
+
+      });
+
+
+
+     });
+  })(document, window, domIsReady);
+
+  ;(function() {
+           // Initialize
+           var bLazy = new Blazy({
+                breakpoints: [{
+              width: 420 // Max-width
+                  , src: 'data-src-small'
+          }]
+              , success: function(element){
+              setTimeout(function(){
+            // We want to remove the loader gif now.
+            // First we find the parent container
+            // then we remove the "loading" class which holds the loader image
+            var parent = element.parentNode;
+            parent.className = parent.className.replace(/\bloading\b/,'');
+              }, 200);
+                }
+           });
+       })();
+
+</script>
+
+
+{% endblock %}
