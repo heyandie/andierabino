@@ -82,16 +82,16 @@
       <div class="grid-100">
         <div class="header-inner grid-80 prefix-10 tablet-grid-100 mobile-grid-100">
           <div class="grid-100 grid-parent">
-            <div>
+            <div class="">
               <a class="brand-logo" href="/">Hey Andie</a>
             </div>
-            <div id="main-nav" class="text-right">
-              <a href="/about">About</a>
-              <a href="/work">Work</a>
-              <a href="#contact">Contact</a>
-              <a href="//facebook.com/andie.rabino" target="=_blank" class="fa fa-facebook-square"></a>
-              <a href="//instagram.com/andiedote" target="=_blank" class="fa fa-instagram"></a>
-              <a href="//github.com/heyandie" target="=_blank" class="fa fa-github"></a>
+            <div id="main-nav" class="mobile-nav text-right">
+              <a class="mobile-link" href="/about">About</a>
+              <a class="mobile-link" href="/work">Work</a>
+              <a class="mobile-link" href="/contact">Contact</a>
+              <a href="//facebook.com/andie.rabino" target="=_blank" class="mobile-hidden fa fa-facebook-square"></a>
+              <a href="//instagram.com/andiedote" target="=_blank" class="mobile-hidden fa fa-instagram"></a>
+              <a href="//github.com/heyandie" target="=_blank" class="mobile-hidden fa fa-github"></a>
             </div>
           </div>
         </div>
@@ -102,13 +102,8 @@
 
   {% endblock %}
 
-  <section id="section-footer" class="grid-container max-10000 text-center padded-v-50">
-    <div id="contact" class="title">
-      Let's Get In Touch
-    </div>
-    <div class="max-10000 padded-top-15">
-      Send a message to rabinoandie@gmail.com
-    </div>
+  <section id="section-footer" class="grid-container max-10000 text-center padded-v-50 {% block footer_class %}{% endblock %}">
+
     <div class="padded-v-15 headline padded-top-50">
       <a href="//facebook.com/andie.rabino" target="=_blank" class="text-white fa fa-facebook-square"></a>&nbsp;
       <a href="//instagram.com/andiedote" target="=_blank" class="text-white fa fa-instagram"></a>&nbsp;

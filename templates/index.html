@@ -27,17 +27,16 @@
   <div class="grid-container">
     <div class="grid-80 prefix-10 tablet-grid-100 mobile-grid-100 padded-v-50">
 
-      <div id="blog-cards" class="grid-100 grid-parent">
       {% for post in posts %}
-      <div class="blog-card">
-          <div class="grid-100 mobile-grid-40">
+      <div class="grid-60 prefix-20 tablet-grid-100 mobile-grid-100">
+          <div class="grid-40 tablet-grid-40 mobile-grid-40">
             <div class="blog-thumbnail">
               <a href="/article/{{post.slug}}">
               <div class="image" style="background-image:url('/{{post.image}}')"></div>
               </a>
             </div>
           </div>
-          <div class="grid-100 mobile-grid-60 grid-parent">
+          <div class="grid-60 tablet-grid-60 mobile-grid-60 grid-parent">
             <div class="grid-100">
                 <div class="grid-100 grid-parent blog-thumbnail-details">
                   <div class="blog-list-category category-{{ post.category.split|join:'-'|lower }}">{{ post.category }}</div>
@@ -53,7 +52,7 @@
                     {% load l10n %}
 
                     {% localize on %}
-                        <span class="text-gray meta">Posted on {{post.localized_posted|date:"M d, Y g:i A" }}</span>
+                        <span class="meta">Posted on {{post.localized_posted|date:"M d, Y g:i A" }}</span>
                     {% endlocalize %}
 
                   </div>
@@ -61,47 +60,45 @@
               </div>
             </div>
           </div>
-
           <div class="grid-100 mobile-grid-100"><div class="divider divider-{{ post.category.split|join:'-'|lower }}"></div></div>
       </div>
       {% endfor %}
-      </div>
     </div>
   </div>
 
 </section>
-<script type="text/javascript">
-  (function(document, window, domIsReady, undefined) {
-     domIsReady(function() {
-        var container = '#blog-cards';
-        new Wookmark(container, {
-          align: 'left',
-          offset: 0,
-          outerOffset: 0,
-          autoResize: true, // This will auto-update the layout when the browser window is resized.
-          itemWidth: function () {
-            // Return a maximum width depending on the viewport
-            var windowWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-            var collectionWidth = document.getElementById('blog-cards').offsetWidth;
-            if (windowWidth > 800) {
-              return 0.25 * collectionWidth;
-            } else if (windowWidth <= 420) {
-              return collectionWidth;
-            } else {
-              return 1 * collectionWidth;
-            }
-          },
-          flexibleWidth: function () {
-            // Return a maximum width depending on the viewport
-            return '100%';
-          },
-          container: document.getElementById('blog-cards'),
-          resizeDelay: 50
-
-      });
-
-     });
-  })(document, window, domIsReady);
+<script>
+// (function(document, window, domIsReady, undefined) {
+//    domIsReady(function() {
+//       var container = '#blog-cards';
+//       new Wookmark(container, {
+//         align: 'left',
+//         offset: 0,
+//         outerOffset: 0,
+//         autoResize: true, // This will auto-update the layout when the browser window is resized.
+//         itemWidth: function () {
+//           // Return a maximum width depending on the viewport
+//           var windowWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+//           var collectionWidth = document.getElementById('blog-cards').offsetWidth;
+//           if (windowWidth > 800) {
+//             return 0.25 * collectionWidth;
+//           } else if (windowWidth <= 420) {
+//             return collectionWidth;
+//           } else {
+//             return 1 * collectionWidth;
+//           }
+//         },
+//         flexibleWidth: function () {
+//           // Return a maximum width depending on the viewport
+//           return '100%';
+//         },
+//         container: document.getElementById('blog-cards'),
+//         resizeDelay: 50
+//
+//     });
+//
+//    });
+// })(document, window, domIsReady);
 </script>
 
 {% endblock %}

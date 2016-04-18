@@ -8,6 +8,7 @@ from . import views
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^about$', views.about, name="about"),
+    url(r'^contact$', views.contact, name="contact"),
     url(r'^work$', views.work, name="work"),
     url(r'^work/roadmob$', views.work_roadmob, name="work"),
     url(r'^work/resume-manager$', views.work_resume_manager, name="resume-manager"),
