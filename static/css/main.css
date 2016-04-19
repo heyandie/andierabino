@@ -85,14 +85,14 @@
 
 @font-face {
     font-family: 'Source Serif Pro';
-    src: url('../fonts/SourceSerifProRegular.otf');
+    src: url('../fonts/SourceSerifProRegular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Source Serif Pro';
-    src: url('../fonts/SourceSerifProBold.otf');
+    src: url('../fonts/SourceSerifProBold.ttf');
     font-weight: bold;
     font-style: bold;
 }
