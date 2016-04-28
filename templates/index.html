@@ -7,12 +7,12 @@
 <section id="section-one" class="grid-container max-10000">
 
   <div class="grid-container">
-    <div class="grid-100">
-      <div class="grid-80 prefix-10 tablet-grid-100 mobile-grid-100">
-        <h1 class="text-white text-center">Hi. This is Andie.</h1>
-        <h5 class="text-white text-thin text-center">A full stack developer writing some random posts.
+    <div id="my-banner"  class="grid-100">
+      <div class="slideUp grid-80 prefix-10 tablet-grid-100 mobile-grid-100 padded-top-15">
+        <h1 class="text-white text-center ">Hi. This is Andie.</h1>
+        <h5 class="text-white text-thin text-center ">A full stack developer writing some random posts.
         </h5>
-        <div class="text-center grid-100 andie-image">
+        <div class=" text-center grid-100 andie-image">
           <img src="/static/images/andie-bw.png" width=200>
         </div>
       </div>
@@ -28,7 +28,7 @@
     <div class="grid-80 prefix-10 tablet-grid-100 mobile-grid-100 padded-v-50">
 
       {% for post in posts %}
-      <div class="grid-60 prefix-20 tablet-grid-100 mobile-grid-100">
+      <div data-animation-offset="{{forloop.counter}}" class="fadeIn grid-60 prefix-20 tablet-grid-100 mobile-grid-100">
           <div class="grid-40 tablet-grid-40 mobile-grid-40">
             <div class="blog-thumbnail">
               <a href="/article/{{post.slug}}">
@@ -67,38 +67,4 @@
   </div>
 
 </section>
-<script>
-// (function(document, window, domIsReady, undefined) {
-//    domIsReady(function() {
-//       var container = '#blog-cards';
-//       new Wookmark(container, {
-//         align: 'left',
-//         offset: 0,
-//         outerOffset: 0,
-//         autoResize: true, // This will auto-update the layout when the browser window is resized.
-//         itemWidth: function () {
-//           // Return a maximum width depending on the viewport
-//           var windowWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-//           var collectionWidth = document.getElementById('blog-cards').offsetWidth;
-//           if (windowWidth > 800) {
-//             return 0.25 * collectionWidth;
-//           } else if (windowWidth <= 420) {
-//             return collectionWidth;
-//           } else {
-//             return 1 * collectionWidth;
-//           }
-//         },
-//         flexibleWidth: function () {
-//           // Return a maximum width depending on the viewport
-//           return '100%';
-//         },
-//         container: document.getElementById('blog-cards'),
-//         resizeDelay: 50
-//
-//     });
-//
-//    });
-// })(document, window, domIsReady);
-</script>
-
 {% endblock %}

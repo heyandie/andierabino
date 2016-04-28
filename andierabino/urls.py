@@ -12,6 +12,10 @@ urlpatterns = [
     url(r'^work$', views.work, name="work"),
     url(r'^work/roadmob$', views.work_roadmob, name="work"),
     url(r'^work/resume-manager$', views.work_resume_manager, name="resume-manager"),
+    url(r'^work/space-voyage$', views.work_up_csi_app, name="up-csi-app"),
     url('', include('blog.urls')),
     url(r'^$', views.index, name="index"),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+
+handler404 = 'andierabino.views.custom_404'
