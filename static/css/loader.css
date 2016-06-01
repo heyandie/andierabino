@@ -1,0 +1,73 @@
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background: #eec213;
+    position: relative;
+    top: 50%;
+    margin: 3px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    animation-name: dotFadeIn;
+  	-webkit-animation-name: dotFadeIn;
+    opacity: 0;
+  	animation-duration: 1s;
+  	-webkit-animation-duration: 1s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+    animation-direction: alternate;
+
+}
+
+.dot-2 {
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+}
+
+.dot-3 {
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+}
+
+.dots-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+}
+
+.preloader-screen {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+
+
+@keyframes dotFadeIn {
+	0% {
+    opacity: 0;
+	}
+
+	100% {
+    opacity: 1;
+	}
+}
+
+@-webkit-keyframes dotFadeIn {
+  0% {
+    opacity: 0;
+	}
+
+	100% {
+    opacity: 1;
+	}
+}

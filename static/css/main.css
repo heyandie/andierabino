@@ -1,6 +1,7 @@
 @import 'unsemantic.css';
 @import 'prism.css';
 @import 'font-awesome.css';
+@import 'loader.css';
 @font-face {
     font-family: 'Just Me Again Down Here';
     src: url('../fonts/JustMeAgainDownHere.ttf');
