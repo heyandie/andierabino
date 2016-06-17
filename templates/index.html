@@ -31,7 +31,7 @@
       <div data-animation-offset="{{forloop.counter}}" class="fadeIn grid-60 prefix-20 tablet-grid-100 mobile-grid-100">
           <div class="grid-40 tablet-grid-40 mobile-grid-40">
             <div class="blog-thumbnail">
-              <a href="/article/{{post.slug}}">
+              <a href="/blog/{{post.slug}}">
               <div class="image" style="background-image:url('/{{post.image}}')"></div>
               </a>
             </div>
@@ -40,7 +40,7 @@
             <div class="grid-100">
                 <div class="grid-100 grid-parent blog-thumbnail-details">
                   <div class="blog-list-category category-{{ post.category.split|join:'-'|lower }}">{{ post.category }}</div>
-                  <a href="/article/{{post.slug}}"><h5>
+                  <a href="/blog/{{post.slug}}"><h5>
                     <b>{{post.title}}</b>
                   </h5></a>
 

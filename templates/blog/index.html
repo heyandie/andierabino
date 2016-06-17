@@ -32,12 +32,12 @@
           <div class="grid-100">
               <div class="grid-100 grid-parent">
                 <div class="blog-list-category category-{{ post.category.split|join:'-'|lower }} emphasis">{{ post.category }}</div>
-                <a href="/article/{{post.slug}}"><h4>
+                <a href="/blog/{{post.slug}}"><h4>
                   <b>{{post.title}}</b>
                 </h4></a>
 
                 <p class="grid-100 grid-parent">
-                  {{post.excerpt}} <a class="meta meta-link" href="/article/{{post.slug}}">[ READ MORE ]</a>
+                  {{post.excerpt}} <a class="meta meta-link" href="/blog/{{post.slug}}">[ READ MORE ]</a>
                 </p>
                 <div class="grid-100 grid-parent text-thin meta padded-v-15">
                   {% load l10n %}
