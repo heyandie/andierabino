@@ -21,7 +21,7 @@ class Blog(models.Model):
 
     @property
     def url(self):
-        return 'www.heyandie.com/article/'+self.slug
+        return 'www.heyandie.com/blog/'+self.slug
 
     @property
     def localized_posted(self):
