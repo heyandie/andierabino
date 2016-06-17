@@ -55,6 +55,11 @@
             <div class="grid-100 grid-parent meta text-center text-blue">
               by Andie Rabino
             </div>
+
+            <p class="image image-p">
+              <img src="/{{post.image}}" width="100%">
+            </p>
+
             <div class="divider"></div>
           </div>
           <div id="post-body">
@@ -84,7 +89,7 @@
         <div class="grid-100 grid-parent">
 
           {% for post in posts %}
-          <div class="grid-33 tablet-grid-33 mobile-grid-100 grid-parent sidebar-blog">
+          <div class="grid-25 tablet-grid-25 mobile-grid-100 grid-parent sidebar-blog">
             <div class="mobile-grid-100">
               <div class="blog-thumbnail">
                 <div class="image" style="background-image:url('/{{post.image}}')">

@@ -39,7 +39,7 @@ def view_post(request, slug):
         'og_tags': og_tags,
         'post': post,
         'title': title,
-        'posts': Blog.objects.exclude(id__in=(post.id,)).order_by('-posted')[:3],
+        'posts': Blog.objects.exclude(id__in=(post.id,)).order_by('-posted')[:4],
         'header_class': "header-white",
         'share_count': data_a[0]['total_count'] + data_b[0]['total_count']
     })
