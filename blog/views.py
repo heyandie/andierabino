@@ -15,7 +15,7 @@ def view_post(request, slug):
     post = get_object_or_404(Blog, slug=slug)
 
     rest_url_a = "http://api.facebook.com/restserver.php?format=json&method=links.getStats&urls="+"http://"+post.url
-    rest_url_b = rest_url_a.replace('http://www.heyandie.com','heyandie.herokuapp.com')
+    rest_url_b = rest_url_a.replace('http://www.heyandie.com/blog','http://www.heyandie.com/article')
 
     response_a = urllib.request.urlopen(rest_url_a)
     response_b = urllib.request.urlopen(rest_url_b)
