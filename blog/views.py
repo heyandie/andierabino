@@ -23,6 +23,12 @@ def view_post(request, slug):
     data_a = json.loads(response_a.read().decode('utf-8'))
     data_b = json.loads(response_b.read().decode('utf-8'))
 
+    share_count = 0;
+    if 0 in data_a:
+        share_count += data_a[0]['total_count']
+
+    if 0 in data_b:
+        share_count += data_b[0]['total_count']
 
     og_tags = {
         'fb:app_id': 224598357874885,
@@ -41,5 +47,5 @@ def view_post(request, slug):
         'title': title,
         'posts': Blog.objects.exclude(id__in=(post.id,)).order_by('-posted')[:4],
         'header_class': "header-white",
-        'share_count': data_a[0]['total_count'] + data_b[0]['total_count']
+        'share_count': share_count
     })
