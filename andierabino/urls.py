@@ -8,7 +8,7 @@ from . import views
 from django.http import HttpResponse
 
 def acmechallenge(request):
-    return HttpResponse("rOkbyhvgWXmDgtM13vdEvCCY4WF6isbu3BsxzNo6Kg8.0EbgG3s-pGPPpWI3xEm0hf0xBn3XqfwRX_nkdVMEPIE")
+    return HttpResponse("ZVh-6afFQVdamvTUTuDJHTMUGq8Xvl6GPyKp9rE8k_c.0EbgG3s-pGPPpWI3xEm0hf0xBn3XqfwRX_nkdVMEPIE")
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
@@ -19,7 +19,7 @@ urlpatterns = [
     url(r'^work/resume-manager$', views.work_resume_manager, name="resume-manager"),
     url(r'^work/space-voyage$', views.work_up_csi_app, name="up-csi-app"),
     url('', include('blog.urls')),
-    url(r'^.well-known/acme-challenge/rOkbyhvgWXmDgtM13vdEvCCY4WF6isbu3BsxzNo6Kg8$', acmechallenge),
+    url(r'^.well-known/acme-challenge/ZVh-6afFQVdamvTUTuDJHTMUGq8Xvl6GPyKp9rE8k_c$', acmechallenge),
     url(r'^$', views.index, name="index"),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
