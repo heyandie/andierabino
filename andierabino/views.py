@@ -41,3 +41,7 @@ def work_resume_manager(request):
 def work_up_csi_app(request):
 
     return render_to_response('work/up_csi_app.html')
+
+def gif(request):
+
+    return render_to_response('gif.html')

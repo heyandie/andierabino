@@ -21,6 +21,7 @@ urlpatterns = [
     url('', include('blog.urls')),
     url(r'^.well-known/acme-challenge/ZVh-6afFQVdamvTUTuDJHTMUGq8Xvl6GPyKp9rE8k_c$', acmechallenge),
     url(r'^$', views.index, name="index"),
+    url(r'^gif$', views.gif)
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 
