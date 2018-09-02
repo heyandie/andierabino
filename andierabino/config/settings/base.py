@@ -52,7 +52,7 @@ MIDDLEWARE_CLASSES = [
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'andierabino.middlewares.DomainRedirectMiddleware',
+#     'andierabino.middlewares.DomainRedirectMiddleware',
 ]
 
 ROOT_URLCONF = 'andierabino.config.urls'
